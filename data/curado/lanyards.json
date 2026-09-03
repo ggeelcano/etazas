@@ -1,0 +1,121 @@
+{
+  "cat": "lanyards",
+  "picks": [
+    {
+      "id": "mk6102",
+      "nombre": "Lanyard poliéster 2 cm Kappin",
+      "sub": "Poliéster",
+      "catFinal": "lanyards",
+      "blurb": "Cinta de poliéster de 2 cm de ancho y 50 cm de largo. Se marca en serigrafía o transfer serigráfico y es el modelo básico para acreditaciones de eventos y empresas.",
+      "base": 1.2,
+      "desde": 0.4,
+      "destacado": true,
+      "eco": false
+    },
+    {
+      "id": "mk6169",
+      "nombre": "Lanyard poliéster 1,5 cm Lemer",
+      "sub": "Poliéster",
+      "catFinal": "lanyards",
+      "blurb": "Cinta de poliéster de 1,5 cm de ancho y 55 cm de largo, disponible en 4 colores. Admite serigrafía, transfer serigráfico, tampografía y doming.",
+      "base": 1.35,
+      "desde": 0.48,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "mk1544",
+      "nombre": "Lanyard poliéster RPET 2 cm Loriet",
+      "sub": "RPET",
+      "catFinal": "lanyards",
+      "blurb": "Cinta de poliéster RPET (reciclado) de 2 cm de ancho y 50 cm de largo. Se marca en serigrafía o transfer serigráfico, pensada para eventos que quieren un lanyard reciclado.",
+      "base": 1.5,
+      "desde": 0.55,
+      "destacado": true,
+      "eco": true
+    },
+    {
+      "id": "mk6196",
+      "nombre": "Lanyard algodón 2 cm Mirok",
+      "sub": "Algodón",
+      "catFinal": "lanyards",
+      "blurb": "Cinta de algodón de 2 cm de ancho y 50 cm de largo. Se marca en serigrafía o transfer serigráfico.",
+      "base": 1.45,
+      "desde": 0.52,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "mk20931",
+      "nombre": "Lanyard poliéster con tarjetero PVC Fleck",
+      "sub": "Con tarjetero",
+      "catFinal": "lanyards",
+      "blurb": "Lanyard de poliéster con tarjetero de PVC para la acreditación. Se marca en serigrafía, tampografía o transfer serigráfico.",
+      "base": 1.8,
+      "desde": 0.7,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "mk1864",
+      "nombre": "Lanyard cartón reciclado 2 cm Nerthus",
+      "sub": "Cartón reciclado",
+      "catFinal": "lanyards",
+      "blurb": "Cinta de cartón reciclado de 2 cm de ancho y 50 cm de largo. Se marca en serigrafía.",
+      "base": 1.4,
+      "desde": 0.5,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "mk6779",
+      "nombre": "Lanyard corcho y caña de trigo 2 cm Bespal",
+      "sub": "Corcho",
+      "catFinal": "lanyards",
+      "blurb": "Cinta de corcho y caña de trigo de 2 cm de ancho y 48 cm de largo. Se marca en serigrafía o transfer serigráfico.",
+      "base": 1.65,
+      "desde": 0.62,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "mk21941",
+      "nombre": "Lanyard poliéster fluorescente 2 cm Cofmil",
+      "sub": "Fluorescente",
+      "catFinal": "lanyards",
+      "blurb": "Cinta de poliéster fluorescente de 2 cm de ancho y 50 cm de largo. Se marca en serigrafía o transfer serigráfico y se ve de lejos en eventos y carreras.",
+      "base": 1.3,
+      "desde": 0.45,
+      "destacado": false,
+      "eco": false
+    }
+  ],
+  "nombres": [
+    { "id": "mk21941", "nombre": "Lanyard poliéster fluorescente 2 cm Cofmil", "sub": "Fluorescente", "catFinal": "lanyards" },
+    { "id": "mk6196", "nombre": "Lanyard algodón 2 cm Mirok", "sub": "Algodón", "catFinal": "lanyards" },
+    { "id": "mk1543", "nombre": "Lanyard algodón y caña de trigo 3,2 cm Denain", "sub": "Caña de trigo", "catFinal": "lanyards", "eco": true },
+    { "id": "mk6779", "nombre": "Lanyard corcho y caña de trigo 2 cm Bespal", "sub": "Corcho", "catFinal": "lanyards", "eco": true },
+    { "id": "mk1544", "nombre": "Lanyard poliéster RPET 2 cm Loriet", "sub": "RPET", "catFinal": "lanyards", "eco": true },
+    { "id": "mk6102", "nombre": "Lanyard poliéster 2 cm Kappin", "sub": "Poliéster", "catFinal": "lanyards" },
+    { "id": "mk6415", "nombre": "Lanyard poliéster 2 cm Kunel", "sub": "Poliéster", "catFinal": "lanyards" },
+    { "id": "mk4826", "nombre": "Tarjetero identificador PVC Bizzot", "sub": "Tarjetero", "catFinal": "lanyards" },
+    { "id": "mk5047", "nombre": "Lanyard poliéster 3,2 cm Perux", "sub": "Poliéster", "catFinal": "lanyards" },
+    { "id": "mk20929", "nombre": "Lanyard algodón y bambú 3,2 cm Gibons", "sub": "Bambú", "catFinal": "lanyards", "eco": true },
+    { "id": "mk5638", "nombre": "Lanyard silicona Veltux", "sub": "Silicona", "catFinal": "lanyards" },
+    { "id": "mk20156", "nombre": "Lanyard silicona y poliéster Sebly", "sub": "Silicona", "catFinal": "lanyards" },
+    { "id": "mk22132", "nombre": "Lanyard poliéster con tarjetero ABS Berbom", "sub": "Con tarjetero", "catFinal": "lanyards" },
+    { "id": "mk20931", "nombre": "Lanyard poliéster con tarjetero PVC Fleck", "sub": "Con tarjetero", "catFinal": "lanyards" },
+    { "id": "mk3709", "nombre": "Lanyard poliéster con tarjetero PVC Maes", "sub": "Con tarjetero", "catFinal": "lanyards" },
+    { "id": "mk6169", "nombre": "Lanyard poliéster 1,5 cm Lemer", "sub": "Poliéster", "catFinal": "lanyards" },
+    { "id": "mk20930", "nombre": "Lanyard poliéster 2 cm Mapik", "sub": "Poliéster", "catFinal": "lanyards" },
+    { "id": "mk8780", "nombre": "Lanyard poliéster 2 cm Neck", "sub": "Poliéster", "catFinal": "lanyards" },
+    { "id": "mk20916", "nombre": "Lanyard corcho con tarjetero Beryel", "sub": "Corcho", "catFinal": "lanyards", "eco": true },
+    { "id": "mk1864", "nombre": "Lanyard cartón reciclado 2 cm Nerthus", "sub": "Cartón reciclado", "catFinal": "lanyards", "eco": true },
+    { "id": "mk6716", "nombre": "Lanyard poliéster 1,5 cm Menfix", "sub": "Poliéster", "catFinal": "lanyards" },
+    { "id": "mk20625", "nombre": "Lanyard poliéster 2 cm Wilou", "sub": "Poliéster", "catFinal": "lanyards" }
+  ],
+  "issues": [
+    "mk6102 Kappin: el blurb llevaba una terna (eventos, colegios y empresas); recortada a dos usos.",
+    "mk22132 Berbom: nombre ampliado a 'Lanyard poliéster con tarjetero ABS Berbom' para reflejar la composición de la ficha (Poliéster/ABS), en línea con Fleck y Maes."
+  ]
+}

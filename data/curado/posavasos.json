@@ -1,0 +1,111 @@
+{
+  "cat": "posavasos",
+  "picks": [
+    {
+      "id": "mk6005",
+      "nombre": "Posavasos corcho 10 cm Brunex",
+      "sub": "Corcho",
+      "catFinal": "posavasos",
+      "blurb": "Posavasos redondo de corcho de 10 cm de diámetro. Se marca en serigrafía a 1 tinta o grabado láser, y también admite impresión digital.",
+      "base": 1.35,
+      "desde": 0.52,
+      "destacado": true,
+      "eco": true
+    },
+    {
+      "id": "mk21713",
+      "nombre": "Posavasos sublimación Kriston",
+      "sub": "Sublimación",
+      "catFinal": "posavasos",
+      "blurb": "Posavasos de poliéster y silicona que se personaliza por sublimación a todo color. Sirve para reproducir logos o fotos sin límite de tintas.",
+      "base": 1.6,
+      "desde": 0.65,
+      "destacado": true,
+      "eco": false
+    },
+    {
+      "id": "mk1749",
+      "nombre": "Posavasos bambú 8,5 cm Derrik",
+      "sub": "Bambú",
+      "catFinal": "posavasos",
+      "blurb": "Posavasos redondo de bambú de 8,5 cm de diámetro. Se marca en tampografía o impresión digital.",
+      "base": 1.5,
+      "desde": 0.58,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "mk5652",
+      "nombre": "Posavasos abridor plástico Olmux",
+      "sub": "Plástico",
+      "catFinal": "posavasos",
+      "blurb": "Posavasos de plástico PP de 8,2 x 8,2 cm con abridor de botellas. Se marca en tampografía o digital y hay 4 colores disponibles.",
+      "base": 1.2,
+      "desde": 0.45,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "mk20810",
+      "nombre": "Posavasos abridor bambú Lestral",
+      "sub": "Bambú",
+      "catFinal": "posavasos",
+      "blurb": "Posavasos cuadrado de bambú de 10 x 10 cm con abridor. Se graba en láser o se imprime en digital, con 4 colores a elegir.",
+      "base": 1.9,
+      "desde": 0.8,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "mk1655",
+      "nombre": "Set posavasos corcho Yagger",
+      "sub": "Corcho",
+      "catFinal": "posavasos",
+      "blurb": "Set de posavasos de corcho de 15 x 13 cm. Se marca en serigrafía a 1 tinta o grabado láser, y admite transfer serigráfico.",
+      "base": 2.6,
+      "desde": 1.15,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "mk1708",
+      "nombre": "Set posavasos bambú y fieltro RPET Sanly",
+      "sub": "Bambú",
+      "catFinal": "posavasos",
+      "blurb": "Set de posavasos de bambú con fieltro RPET, de 10,7 x 10,7 cm. Se marca en serigrafía o tampografía y admite grabado láser.",
+      "base": 2.9,
+      "desde": 1.3,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "mk1654",
+      "nombre": "Set posavasos acacia y extracto de mármol Derrol",
+      "sub": "Madera",
+      "catFinal": "posavasos",
+      "blurb": "Set de posavasos de madera de acacia y extracto de mármol, de 12 x 11,5 cm. Se personaliza con grabado láser o tampografía.",
+      "base": 3,
+      "desde": 1.4,
+      "destacado": false,
+      "eco": false
+    }
+  ],
+  "nombres": [
+    { "id": "mk21689", "nombre": "Set posavasos bambú Elmor", "sub": "Bambú", "catFinal": "posavasos", "eco": true },
+    { "id": "mk1654", "nombre": "Set posavasos acacia y extracto de mármol Derrol", "sub": "Madera", "catFinal": "posavasos", "eco": false },
+    { "id": "mk20810", "nombre": "Posavasos abridor bambú Lestral", "sub": "Bambú", "catFinal": "posavasos", "eco": true },
+    { "id": "mk6275", "nombre": "Posavasos madera Palet", "sub": "Madera", "catFinal": "posavasos", "eco": false },
+    { "id": "mk1749", "nombre": "Posavasos bambú 8,5 cm Derrik", "sub": "Bambú", "catFinal": "posavasos", "eco": true },
+    { "id": "mk6005", "nombre": "Posavasos corcho 10 cm Brunex", "sub": "Corcho", "catFinal": "posavasos", "eco": true },
+    { "id": "mk1655", "nombre": "Set posavasos corcho Yagger", "sub": "Corcho", "catFinal": "posavasos", "eco": true },
+    { "id": "mk6487", "nombre": "Set posavasos madera Yantic", "sub": "Madera", "catFinal": "posavasos", "eco": false },
+    { "id": "mk21713", "nombre": "Posavasos sublimación Kriston", "sub": "Sublimación", "catFinal": "posavasos", "eco": false },
+    { "id": "mk20106", "nombre": "Set posavasos corcho Danop", "sub": "Corcho", "catFinal": "posavasos", "eco": true },
+    { "id": "mk1708", "nombre": "Set posavasos bambú y fieltro RPET Sanly", "sub": "Bambú", "catFinal": "posavasos", "eco": true },
+    { "id": "mk5652", "nombre": "Posavasos abridor plástico Olmux", "sub": "Plástico", "catFinal": "posavasos", "eco": false },
+    { "id": "mk20580", "nombre": "Set posavasos bambú Mizar", "sub": "Bambú", "catFinal": "posavasos", "eco": true }
+  ],
+  "issues": [
+    "mk1654 Derrol: el nombre decía 'acacia y mármol' pero la ficha indica 'Extracto de Mármol'; corregido a 'Set posavasos acacia y extracto de mármol Derrol' en picks y nombres para no afirmar mármol macizo."
+  ]
+}

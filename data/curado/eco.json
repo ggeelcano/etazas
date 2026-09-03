@@ -1,0 +1,124 @@
+{
+  "cat": "eco",
+  "picks": [
+    {
+      "id": "roCA0427",
+      "nombre": "Camiseta técnica poliéster reciclado Imola",
+      "sub": "Reciclada",
+      "catFinal": "camisetas",
+      "blurb": "Camiseta técnica de manga corta en poliéster reciclado con certificado GRS y tejido transpirable Control Dry. Cuello redondo con cubrecosturas al tono y etiqueta tejida eco, pensada para carreras populares y equipos.",
+      "base": 8.9,
+      "desde": 4.1,
+      "destacado": true,
+      "eco": true
+    },
+    {
+      "id": "roCA0428",
+      "nombre": "Camiseta técnica reciclada entallada mujer Imola Woman",
+      "sub": "Reciclada mujer",
+      "catFinal": "camisetas",
+      "blurb": "Versión entallada de mujer de la Imola: manga corta, poliéster reciclado y tejido transpirable Control Dry. Cuello redondo con cubrecosturas al tono y etiqueta tejida eco.",
+      "base": 8.9,
+      "desde": 4.1,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "roCA0430",
+      "nombre": "Camiseta técnica manga corta Estoril",
+      "sub": "Técnica",
+      "catFinal": "camisetas",
+      "blurb": "Camiseta técnica de manga corta transpirable con tratamiento antibacteriano y tejido Control Dry. Lleva faldón trasero, costuras laterales adelantadas y cuello redondo con cubrecosturas al tono.",
+      "base": 8.5,
+      "desde": 3.85,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "roCA0432",
+      "nombre": "Camiseta técnica manga larga Estoril L/S",
+      "sub": "Manga larga",
+      "catFinal": "camisetas",
+      "blurb": "La misma Estoril en manga larga: tejido transpirable Control Dry con tratamiento antibacteriano, faldón trasero y costuras laterales adelantadas. Cuello redondo con cubrecosturas al tono, para entrenar cuando refresca.",
+      "base": 8.8,
+      "desde": 3.95,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "roCA0426",
+      "nombre": "Camiseta técnica ranglán sublimada Sochi",
+      "sub": "Sublimación",
+      "catFinal": "camisetas",
+      "blurb": "Camiseta técnica unisex de manga ranglán con paneles sublimados y costuras remalladas a contraste. Los paneles se personalizan por sublimación, y lleva cuello redondo con cubrecosturas al tono y etiqueta tejida eco.",
+      "base": 8.6,
+      "desde": 3.9,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "roPO0400",
+      "nombre": "Polo técnico manga corta Tormo",
+      "sub": "Técnico",
+      "catFinal": "polos",
+      "blurb": "Polo técnico de manga corta transpirable con tejido Control Dry y tratamiento antibacteriano. Cuello y puños de rib 1x1 al tono, tapeta con botones a presión y aperturas laterales, para uniformar personal y equipos.",
+      "base": 10.9,
+      "desde": 5.9,
+      "destacado": true,
+      "eco": true
+    },
+    {
+      "id": "roPO0402",
+      "nombre": "Polo técnico bicolor Tamil",
+      "sub": "Bicolor",
+      "catFinal": "polos",
+      "blurb": "Polo técnico bicolor de manga corta transpirable con tratamiento antibacteriano. Pieza en hombros y bocamanga a contraste, cuello y puños de rib 1x1 con detalle a contraste y aperturas laterales.",
+      "base": 11.5,
+      "desde": 6.2,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "roSU1031",
+      "nombre": "Sudadera técnica media cremallera Estambul",
+      "sub": "Técnica",
+      "catFinal": "sudaderas",
+      "blurb": "Sudadera técnica perchada de manga ranglán con media cremallera invertida y detalles reflectantes. Cubrecosturas en el cuello interno y puños con ojal para el pulgar, para salir a correr con poca luz.",
+      "base": 18.9,
+      "desde": 11.5,
+      "destacado": false,
+      "eco": true
+    }
+  ],
+  "nombres": [
+    { "id": "roPK5072", "nombre": "Parka acolchada con capucha America", "sub": "Parka", "catFinal": "sudaderas", "eco": true },
+    { "id": "roPK5073", "nombre": "Parka acolchada mujer America Woman", "sub": "Parka mujer", "catFinal": "sudaderas", "eco": true },
+    { "id": "roCA0304", "nombre": "Camiseta técnica manga corta Slam", "sub": "Técnica", "catFinal": "camisetas", "eco": true },
+    { "id": "roCA0430", "nombre": "Camiseta técnica manga corta Estoril", "sub": "Técnica", "catFinal": "camisetas", "eco": true },
+    { "id": "roCA0431", "nombre": "Camiseta técnica entallada mujer Estoril Woman", "sub": "Técnica mujer", "catFinal": "camisetas", "eco": true },
+    { "id": "roCA0305", "nombre": "Camiseta técnica entallada mujer Slam Woman", "sub": "Técnica mujer", "catFinal": "camisetas", "eco": true },
+    { "id": "roCA0427", "nombre": "Camiseta técnica poliéster reciclado Imola", "sub": "Reciclada", "catFinal": "camisetas", "eco": true },
+    { "id": "roCA0428", "nombre": "Camiseta técnica reciclada entallada mujer Imola Woman", "sub": "Reciclada mujer", "catFinal": "camisetas", "eco": true },
+    { "id": "roCA0426", "nombre": "Camiseta técnica ranglán sublimada Sochi", "sub": "Sublimación", "catFinal": "camisetas", "eco": true },
+    { "id": "roRD6665", "nombre": "Top deportivo sin costuras Sebring", "sub": "Top deportivo", "catFinal": "camisetas", "eco": true },
+    { "id": "roPO0400", "nombre": "Polo técnico manga corta Tormo", "sub": "Técnico", "catFinal": "polos", "eco": true },
+    { "id": "roPO0401", "nombre": "Polo técnico entallado mujer Tormo Woman", "sub": "Técnico mujer", "catFinal": "polos", "eco": true },
+    { "id": "roPO0402", "nombre": "Polo técnico bicolor Tamil", "sub": "Bicolor", "catFinal": "polos", "eco": true },
+    { "id": "roPO0409", "nombre": "Polo técnico entallado mujer Tamil Woman", "sub": "Técnico mujer", "catFinal": "polos", "eco": true },
+    { "id": "roBE0434", "nombre": "Pantalón running mujer Stratos", "sub": "Pantalón running", "catFinal": "camisetas", "eco": true },
+    { "id": "roBE0433", "nombre": "Pantalón running hombre Thema", "sub": "Pantalón running", "catFinal": "camisetas", "eco": true },
+    { "id": "roPA0306", "nombre": "Pantalón pádel hombre Murray", "sub": "Pádel", "catFinal": "camisetas", "eco": true },
+    { "id": "roPA0307", "nombre": "Falda pádel con short mujer Serena", "sub": "Pádel", "catFinal": "camisetas", "eco": true },
+    { "id": "roLG6700", "nombre": "Malla corta compresora reciclada Gales", "sub": "Malla reciclada", "catFinal": "camisetas", "eco": true },
+    { "id": "roLG6701", "nombre": "Malla larga compresora reciclada Norton", "sub": "Malla reciclada", "catFinal": "camisetas", "eco": true },
+    { "id": "roCA0432", "nombre": "Camiseta técnica manga larga Estoril L/S", "sub": "Manga larga", "catFinal": "camisetas", "eco": true },
+    { "id": "roSU1031", "nombre": "Sudadera técnica media cremallera Estambul", "sub": "Técnica", "catFinal": "sudaderas", "eco": true },
+    { "id": "roSU1033", "nombre": "Sudadera técnica entallada mujer Estambul Woman", "sub": "Técnica mujer", "catFinal": "sudaderas", "eco": true }
+  ],
+  "issues": [
+    "roCA0427 Imola: precio subido de 7,90/3,60 a 8,90/4,10. El brief fija para eco el rango de camiseta orgánica +10 % (8,25-10,89 / 3,74-5,06) y 7,90/3,60 quedaba por debajo; además era la única reciclada con GRS y estaba más barata que la Estoril sin reciclar.",
+    "roCA0428 Imola Woman: mismo ajuste, de 7,90/3,60 a 8,90/4,10, por el mismo motivo.",
+    "roCA0426 Sochi: en el blurb se cambia 'Los paneles se imprimen a todo color' por 'Los paneles se personalizan por sublimación'; la ficha solo dice 'paneles sublimados', lo del color era una inferencia.",
+    "Nota sin cambio: pantalones, mallas, falda y top (roBE0434, roBE0433, roPA0306, roPA0307, roLG6700, roLG6701, roRD6665) no tienen categoría propia en la lista válida; se mantienen en camisetas como bucket textil más cercano. Parkas en sudaderas por el mismo motivo."
+  ]
+}

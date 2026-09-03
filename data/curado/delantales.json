@@ -1,0 +1,132 @@
+{
+  "cat": "delantales",
+  "picks": [
+    {
+      "id": "mk4746",
+      "nombre": "Delantal algodón/poliéster Xigor",
+      "sub": "Algodón/poliéster",
+      "catFinal": "delantales",
+      "blurb": "Delantal de algodón y poliéster de 90 x 65 cm. Se marca en serigrafía o transfer serigráfico y hay 4 colores de tela.",
+      "base": 6.9,
+      "desde": 3.35,
+      "destacado": true,
+      "eco": false
+    },
+    {
+      "id": "roDE9125",
+      "nombre": "Delantal largo sarga Benoit",
+      "sub": "Largo",
+      "catFinal": "delantales",
+      "blurb": "Delantal largo de sarga con cinta de cuello ajustable y cintas del mismo tejido para la cintura. Lleva bolsillo frontal dividido en dos.",
+      "base": 7.9,
+      "desde": 3.85,
+      "destacado": true,
+      "eco": false
+    },
+    {
+      "id": "mk6954",
+      "nombre": "Delantal algodón 280 g Rober",
+      "sub": "Algodón",
+      "catFinal": "delantales",
+      "blurb": "Delantal de algodón de 280 g, 80 x 68 cm. Admite bordado o serigrafía y hay 4 colores de tela.",
+      "base": 8.5,
+      "desde": 4.1,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "roDE9123",
+      "nombre": "Delantal corto sarga Classic",
+      "sub": "Corto",
+      "catFinal": "delantales",
+      "blurb": "Delantal corto de sarga para la cintura, con bolsillo frontal dividido en dos por una doble costura. Cintas del mismo tejido para ajustar.",
+      "base": 6.5,
+      "desde": 3.2,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "roDE9127",
+      "nombre": "Delantal corto vaquero Dacosta",
+      "sub": "Vaquero",
+      "catFinal": "delantales",
+      "blurb": "Delantal corto vaquero con cintas de sarga a contraste para ajustar en la cintura. Lleva bolsillo frontal dividido en dos y hueco para bolígrafo.",
+      "base": 7.5,
+      "desde": 3.65,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "mk6425",
+      "nombre": "Delantal algodón orgánico 180 g Riffox",
+      "sub": "Orgánico",
+      "catFinal": "delantales",
+      "blurb": "Delantal de algodón orgánico de 180 g, 90 x 65 cm. Se marca en serigrafía o bordado y hay 4 colores de tela.",
+      "base": 8.9,
+      "desde": 4.3,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "mk1714",
+      "nombre": "Delantal algodón y PU 340 g Yorrent",
+      "sub": "Algodón/PU",
+      "catFinal": "delantales",
+      "blurb": "Delantal de algodón y PU de 340 g, 90 x 68 cm. Admite bordado o serigrafía y hay 4 colores.",
+      "base": 9.5,
+      "desde": 4.6,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "mk9063",
+      "nombre": "Manopla de algodón Piper",
+      "sub": "Manopla",
+      "catFinal": "delantales",
+      "blurb": "Manopla de cocina de algodón de 28,5 x 18 cm. Se marca en serigrafía o transfer serigráfico.",
+      "base": 4.5,
+      "desde": 2.05,
+      "destacado": false,
+      "eco": false
+    }
+  ],
+  "nombres": [
+    { "id": "mk3897", "nombre": "Delantal algodón/poliéster Bacatus", "sub": "Algodón/poliéster", "catFinal": "delantales", "eco": false },
+    { "id": "mk21425", "nombre": "Delantal poliéster/PVC Leroix", "sub": "Poliéster/PVC", "catFinal": "delantales", "eco": false },
+    { "id": "mkundefined", "nombre": "Delantal algodón orgánico 220 g Kuirtel", "sub": "Orgánico", "catFinal": "delantales", "eco": true },
+    { "id": "mk1715", "nombre": "Delantal poliéster RPET Hanaku", "sub": "RPET", "catFinal": "delantales", "eco": true },
+    { "id": "mk1154", "nombre": "Delantal de cáñamo Leiza", "sub": "Cáñamo", "catFinal": "delantales", "eco": false },
+    { "id": "mk6831", "nombre": "Delantal algodón reciclado 140 g Pissek", "sub": "Reciclado", "catFinal": "delantales", "eco": true },
+    { "id": "mk22025", "nombre": "Delantal algodón reciclado y RPET 180 g Guandak", "sub": "Reciclado", "catFinal": "delantales", "eco": true },
+    { "id": "mk6425", "nombre": "Delantal algodón orgánico 180 g Riffox", "sub": "Orgánico", "catFinal": "delantales", "eco": true },
+    { "id": "mk1270", "nombre": "Delantal algodón Fairtrade 180 g Zowi", "sub": "Algodón", "catFinal": "delantales", "eco": false },
+    { "id": "mk4168", "nombre": "Delantal non-woven Vanur", "sub": "Non-woven", "catFinal": "delantales", "eco": false },
+    { "id": "mk1717", "nombre": "Manopla algodón reciclado Cafar", "sub": "Manopla", "catFinal": "delantales", "eco": true },
+    { "id": "mk6469", "nombre": "Manopla algodón orgánico Calen", "sub": "Manopla", "catFinal": "delantales", "eco": true },
+    { "id": "mk9063", "nombre": "Manopla de algodón Piper", "sub": "Manopla", "catFinal": "delantales", "eco": false },
+    { "id": "mk1716", "nombre": "Manopla RPET Kalose", "sub": "Manopla", "catFinal": "delantales", "eco": true },
+    { "id": "mk21686", "nombre": "Manopla algodón orgánico y goma Kinix", "sub": "Manopla", "catFinal": "delantales", "eco": true },
+    { "id": "mk21692", "nombre": "Agarrador algodón y corcho Nayron", "sub": "Agarrador", "catFinal": "delantales", "eco": true },
+    { "id": "mk4870", "nombre": "Delantal corto poliéster Milty", "sub": "Poliéster", "catFinal": "delantales", "eco": false },
+    { "id": "mk6051", "nombre": "Delantal algodón/poliéster Konner", "sub": "Algodón/poliéster", "catFinal": "delantales", "eco": false },
+    { "id": "mk4746", "nombre": "Delantal algodón/poliéster Xigor", "sub": "Algodón/poliéster", "catFinal": "delantales", "eco": false },
+    { "id": "mk6295", "nombre": "Delantal algodón y PU 340 g Vurcex", "sub": "Algodón/PU", "catFinal": "delantales", "eco": false },
+    { "id": "mk1714", "nombre": "Delantal algodón y PU 340 g Yorrent", "sub": "Algodón/PU", "catFinal": "delantales", "eco": false },
+    { "id": "mk22096", "nombre": "Delantal canvas reciclado 350 g Fonor", "sub": "Reciclado", "catFinal": "delantales", "eco": true },
+    { "id": "mk6954", "nombre": "Delantal algodón 280 g Rober", "sub": "Algodón", "catFinal": "delantales", "eco": false },
+    { "id": "mk1524", "nombre": "Delantal non-woven RPET Mayfil", "sub": "Non-woven", "catFinal": "delantales", "eco": true },
+    { "id": "roDE9091", "nombre": "Delantal casulla reversible Arzak", "sub": "Casulla", "catFinal": "delantales", "eco": false },
+    { "id": "roDE9123", "nombre": "Delantal corto sarga Classic", "sub": "Corto", "catFinal": "delantales", "eco": false },
+    { "id": "roDE9124", "nombre": "Delantal corto sarga Mini", "sub": "Corto", "catFinal": "delantales", "eco": false },
+    { "id": "roDE9127", "nombre": "Delantal corto vaquero Dacosta", "sub": "Vaquero", "catFinal": "delantales", "eco": false },
+    { "id": "roDE9126", "nombre": "Delantal largo vaquero Batali", "sub": "Vaquero", "catFinal": "delantales", "eco": false },
+    { "id": "roDE9139", "nombre": "Delantal largo sarga reciclada Bost", "sub": "Reciclado", "catFinal": "delantales", "eco": true },
+    { "id": "roDE9125", "nombre": "Delantal largo sarga Benoit", "sub": "Largo", "catFinal": "delantales", "eco": false },
+    { "id": "roDE9129", "nombre": "Delantal largo popelín Ducasse", "sub": "Largo", "catFinal": "delantales", "eco": false },
+    { "id": "roDE9128", "nombre": "Delantal largo sarga Ramsay", "sub": "Largo", "catFinal": "delantales", "eco": false }
+  ],
+  "issues": [
+    "mk21425 Leroix: nombre armonizado a 'Delantal poliéster/PVC Leroix' para escribir la mezcla igual que en el resto (Algodón/poliéster, Algodón/PU).",
+    "Aviso: el id 'mkundefined' (Delantal Kuirtel) viene sin ref en el fichero fuente; se mantiene tal cual para cubrir los 33 ids, conviene arreglarlo en el scraper."
+  ]
+}

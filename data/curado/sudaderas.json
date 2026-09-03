@@ -1,0 +1,120 @@
+{
+  "cat": "sudaderas",
+  "picks": [
+    {
+      "id": "roSU1070",
+      "nombre": "Sudadera cuello redondo Clasica",
+      "sub": "Cuello redondo",
+      "catFinal": "sudaderas",
+      "blurb": "Sudadera unisex de cuello redondo con cuello, puños y cinturilla en canalé 2x1 con elastano. Es la opción básica para colegios y empresas.",
+      "base": 14.5,
+      "desde": 8.9,
+      "destacado": true,
+      "eco": false
+    },
+    {
+      "id": "roSU1067",
+      "nombre": "Sudadera con capucha Urban",
+      "sub": "Con capucha",
+      "catFinal": "sudaderas",
+      "blurb": "Sudadera con capucha forrada y cordón plano. Puños y cinturilla en canalé 2x1 con elastano y hay colores con capucha a contraste.",
+      "base": 16.9,
+      "desde": 9.9,
+      "destacado": true,
+      "eco": false
+    },
+    {
+      "id": "roSU1068",
+      "nombre": "Sudadera con capucha mujer Urban Woman",
+      "sub": "Mujer",
+      "catFinal": "sudaderas",
+      "blurb": "Versión de mujer de la Urban, con capucha forrada y apertura en los puños para el pulgar. Puños y cinturilla en canalé 1x1 con elastano.",
+      "base": 16.9,
+      "desde": 9.9,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "roCQ6421",
+      "nombre": "Sudadera con cremallera y capucha Montblanc",
+      "sub": "Cremallera",
+      "catFinal": "sudaderas",
+      "blurb": "Sudadera unisex con cremallera frontal al tono y capucha. Bolsillos canguro y canalé 2x1 con elastano en el contorno de la capucha, puños y cinturilla.",
+      "base": 18.9,
+      "desde": 11.5,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "roSU1109",
+      "nombre": "Sudadera media cremallera cuello alto Aneto",
+      "sub": "Media cremallera",
+      "catFinal": "sudaderas",
+      "blurb": "Sudadera unisex con media cremallera al tono y cuello alto. Puños y cinturilla en canalé 2x1 con elastano, pensada para uniforme de trabajo o equipo.",
+      "base": 17.5,
+      "desde": 10.5,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "roCQ6439",
+      "nombre": "Sudadera con cremallera y cuello alto Ulan",
+      "sub": "Cremallera",
+      "catFinal": "sudaderas",
+      "blurb": "Sudadera unisex con cremallera frontal al tono y cuello alto, sin capucha. Dos bolsillos laterales con ribete y canalé 2x1 con elastano en puños y cinturilla.",
+      "base": 18.5,
+      "desde": 11.2,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "roSU1074",
+      "nombre": "Sudadera con capucha algodón orgánico Vinson",
+      "sub": "Orgánica",
+      "catFinal": "sudaderas",
+      "blurb": "Sudadera unisex de algodón orgánico peinado con capucha forrada y manga ranglán. Puños y cinturilla en canalé 2x1 con elastano.",
+      "base": 19.9,
+      "desde": 12.5,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "roSU1071",
+      "nombre": "Sudadera cuello redondo algodón orgánico Batian",
+      "sub": "Orgánica",
+      "catFinal": "sudaderas",
+      "blurb": "Sudadera unisex de cuello redondo en algodón orgánico peinado. Costuras remalladas y canalé 2x1 con elastano en cuello, puños y cinturilla.",
+      "base": 18.9,
+      "desde": 11.9,
+      "destacado": false,
+      "eco": true
+    }
+  ],
+  "nombres": [
+    { "id": "roSU2204", "nombre": "Sudadera con capucha algodón efecto lavado Kenia", "sub": "Con capucha", "catFinal": "sudaderas", "eco": false },
+    { "id": "roSU1067", "nombre": "Sudadera con capucha Urban", "sub": "Con capucha", "catFinal": "sudaderas", "eco": false },
+    { "id": "roSU1068", "nombre": "Sudadera con capucha mujer Urban Woman", "sub": "Mujer", "catFinal": "sudaderas", "eco": false },
+    { "id": "roSU1058", "nombre": "Sudadera con capucha bicolor Badet", "sub": "Bicolor", "catFinal": "sudaderas", "eco": false },
+    { "id": "roSU1074", "nombre": "Sudadera con capucha algodón orgánico Vinson", "sub": "Orgánica", "catFinal": "sudaderas", "eco": true },
+    { "id": "roSU6702", "nombre": "Sudadera oversize con capucha Otto", "sub": "Oversize", "catFinal": "sudaderas", "eco": false },
+    { "id": "roCQ6421", "nombre": "Sudadera con cremallera y capucha Montblanc", "sub": "Cremallera", "catFinal": "sudaderas", "eco": false },
+    { "id": "roCQ6425", "nombre": "Sudadera entallada con cremallera y capucha Veleta", "sub": "Entallada", "catFinal": "sudaderas", "eco": false },
+    { "id": "roSU1105", "nombre": "Sudadera con cremallera y capucha Fuji", "sub": "Cremallera", "catFinal": "sudaderas", "eco": false },
+    { "id": "roSU1119", "nombre": "Sudadera ligera con capucha Manaslu", "sub": "Ligera", "catFinal": "sudaderas", "eco": false },
+    { "id": "roSU1070", "nombre": "Sudadera cuello redondo Clasica", "sub": "Cuello redondo", "catFinal": "sudaderas", "eco": false },
+    { "id": "roSU1071", "nombre": "Sudadera cuello redondo algodón orgánico Batian", "sub": "Orgánica", "catFinal": "sudaderas", "eco": true },
+    { "id": "roSU1117", "nombre": "Sudadera cuello redondo Teleno", "sub": "Cuello redondo", "catFinal": "sudaderas", "eco": false },
+    { "id": "roSU1104", "nombre": "Sudadera cuello redondo manga ranglán Annapurna", "sub": "Cuello redondo", "catFinal": "sudaderas", "eco": false },
+    { "id": "roCQ6439", "nombre": "Sudadera con cremallera y cuello alto Ulan", "sub": "Cremallera", "catFinal": "sudaderas", "eco": false },
+    { "id": "roSU2203", "nombre": "Sudadera cuello redondo algodón efecto lavado Jaya", "sub": "Cuello redondo", "catFinal": "sudaderas", "eco": false },
+    { "id": "roSU1109", "nombre": "Sudadera media cremallera cuello alto Aneto", "sub": "Media cremallera", "catFinal": "sudaderas", "eco": false },
+    { "id": "roSM1195", "nombre": "Chaqueta polar con cremallera Luciane", "sub": "Polar", "catFinal": "sudaderas", "eco": false }
+  ],
+  "issues": [
+    "roSU1070 blurb: quitada la terna 'equipos, colegios y empresas'; queda 'colegios y empresas'.",
+    "roCQ6439 blurb: quitado 'completa' (la ficha solo dice 'cremallera frontal'); añadido 'al tono', que sí consta.",
+    "roCQ6421 blurb: 'canalé en capucha' cambiado a 'en el contorno de la capucha', que es lo que dice la ficha.",
+    "roSU2204 y roSU2203 nombre: 'algodón lavado' cambiado a 'algodón efecto lavado', literal de la ficha.",
+    "roSM1195 Luciane es una chaqueta polar, no una sudadera; se mantiene en 'sudaderas' porque no hay categoría válida más ajustada."
+  ]
+}

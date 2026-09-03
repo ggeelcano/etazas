@@ -1,0 +1,124 @@
+{
+  "cat": "paraguas",
+  "picks": [
+    {
+      "id": "mk4674",
+      "nombre": "Paraguas poliéster Ø 105 cm Meslop",
+      "sub": "Clásico",
+      "catFinal": "paraguas",
+      "blurb": "Paraguas de poliéster 190T con varillas de metal y 105 cm de diámetro, el formato básico para regalo de empresa. Se marca en serigrafía, sublimación o transfer serigráfico.",
+      "base": 10.5,
+      "desde": 4.7,
+      "destacado": true,
+      "eco": false
+    },
+    {
+      "id": "mk5706",
+      "nombre": "Paraguas poliéster Ø 105 cm Halrum",
+      "sub": "Clásico",
+      "catFinal": "paraguas",
+      "blurb": "Paraguas de poliéster 190T con varillas de fibra de vidrio y 105 cm de diámetro. Admite serigrafía, sublimación y grabado láser.",
+      "base": 11.5,
+      "desde": 5.2,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "mk21879",
+      "nombre": "Paraguas plegable Ø 90 cm Ottis",
+      "sub": "Plegable",
+      "catFinal": "paraguas",
+      "blurb": "Paraguas plegable de poliéster 190T con varillas de fibra de vidrio y 90 cm de diámetro. Se marca en serigrafía o transfer serigráfico.",
+      "base": 11.9,
+      "desde": 5.4,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "mk5552",
+      "nombre": "Paraguas reversible Ø 108 cm Hamfrey",
+      "sub": "Reversible",
+      "catFinal": "paraguas",
+      "blurb": "Paraguas reversible de pongee 190T con varillas de fibra de vidrio y 108 cm de diámetro. Se marca en serigrafía, tampografía o grabado láser.",
+      "base": 13.5,
+      "desde": 6.3,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "mk21519",
+      "nombre": "Paraguas RPET Ø 120 cm Wiber",
+      "sub": "RPET",
+      "catFinal": "paraguas",
+      "blurb": "Paraguas de poliéster 190T reciclado (RPET) con varillas de fibra de vidrio y 120 cm de diámetro. Se marca en serigrafía, sublimación o transfer serigráfico.",
+      "base": 13.9,
+      "desde": 6.5,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "mk6105",
+      "nombre": "Paraguas poliéster Ø 130 cm Panan",
+      "sub": "Golf XL",
+      "catFinal": "paraguas",
+      "blurb": "Paraguas grande de poliéster 190T con varillas de fibra de vidrio y 130 cm de diámetro. Se marca en serigrafía, sublimación o transfer serigráfico.",
+      "base": 15.9,
+      "desde": 7.9,
+      "destacado": false,
+      "eco": false
+    },
+    {
+      "id": "mk22228",
+      "nombre": "Paraguas RPET Ø 130 cm Narnor",
+      "sub": "RPET",
+      "catFinal": "paraguas",
+      "blurb": "Paraguas de pongee 210T reciclado (RPET) con varillas de fibra de vidrio y 130 cm de diámetro. Se marca en transfer digital o tampografía.",
+      "base": 17.9,
+      "desde": 8.9,
+      "destacado": false,
+      "eco": true
+    },
+    {
+      "id": "mk4393",
+      "nombre": "Paraguas golf Ø 135 cm Budyx",
+      "sub": "Golf XL",
+      "catFinal": "paraguas",
+      "blurb": "Paraguas de golf en pongee 190T con varillas de fibra de vidrio y 135 cm de diámetro. Se marca en serigrafía, sublimación o transfer serigráfico.",
+      "base": 18.9,
+      "desde": 9.5,
+      "destacado": true,
+      "eco": false
+    }
+  ],
+  "nombres": [
+    { "id": "mk4393", "nombre": "Paraguas golf Ø 135 cm Budyx", "sub": "Golf XL", "catFinal": "paraguas", "eco": false },
+    { "id": "mk6105", "nombre": "Paraguas poliéster Ø 130 cm Panan", "sub": "Golf XL", "catFinal": "paraguas", "eco": false },
+    { "id": "mk1803", "nombre": "Paraguas pongee Ø 130 cm Dolku", "sub": "Golf XL", "catFinal": "paraguas", "eco": false },
+    { "id": "mk22228", "nombre": "Paraguas RPET Ø 130 cm Narnor", "sub": "RPET", "catFinal": "paraguas", "eco": true },
+    { "id": "mk22267", "nombre": "Paraguas RPET Ø 120 cm Savilar", "sub": "RPET", "catFinal": "paraguas", "eco": true },
+    { "id": "mk5552", "nombre": "Paraguas reversible Ø 108 cm Hamfrey", "sub": "Reversible", "catFinal": "paraguas", "eco": false },
+    { "id": "mk5706", "nombre": "Paraguas poliéster Ø 105 cm Halrum", "sub": "Clásico", "catFinal": "paraguas", "eco": false },
+    { "id": "mk1219", "nombre": "Paraguas RPET Ø 100 cm Branit", "sub": "RPET", "catFinal": "paraguas", "eco": true },
+    { "id": "mk21519", "nombre": "Paraguas RPET Ø 120 cm Wiber", "sub": "RPET", "catFinal": "paraguas", "eco": true },
+    { "id": "mk6316", "nombre": "Paraguas RPET Ø 105 cm Bonaf", "sub": "RPET", "catFinal": "paraguas", "eco": true },
+    { "id": "mk20344", "nombre": "Paraguas RPET Ø 105 cm Wolver", "sub": "RPET", "catFinal": "paraguas", "eco": true },
+    { "id": "mk20341", "nombre": "Paraguas poliéster Ø 130 cm Estaro", "sub": "Golf XL", "catFinal": "paraguas", "eco": false },
+    { "id": "mk20340", "nombre": "Paraguas poliéster Ø 130 cm Dewey", "sub": "Golf XL", "catFinal": "paraguas", "eco": false },
+    { "id": "mk20342", "nombre": "Paraguas RPET Ø 105 cm Gotley", "sub": "RPET", "catFinal": "paraguas", "eco": true },
+    { "id": "mk7153", "nombre": "Paraguas pongee Ø 120 cm Campbell", "sub": "Clásico", "catFinal": "paraguas", "eco": false },
+    { "id": "mk4674", "nombre": "Paraguas poliéster Ø 105 cm Meslop", "sub": "Clásico", "catFinal": "paraguas", "eco": false },
+    { "id": "mk1947", "nombre": "Paraguas poliéster Ø 105 cm Lagont", "sub": "Clásico", "catFinal": "paraguas", "eco": false },
+    { "id": "mk9215", "nombre": "Paraguas poliéster Ø 105 cm Santy", "sub": "Clásico", "catFinal": "paraguas", "eco": false },
+    { "id": "mk22064", "nombre": "Set paraguas RPET y bolsa plegable Escan", "sub": "Set", "catFinal": "paraguas", "eco": true },
+    { "id": "mk22359", "nombre": "Paraguas RPET Ø 100 cm Jonathor", "sub": "RPET", "catFinal": "paraguas", "eco": true },
+    { "id": "mk5707", "nombre": "Paraguas pongee Ø 98 cm Brosmon", "sub": "Clásico", "catFinal": "paraguas", "eco": false },
+    { "id": "mk21521", "nombre": "Paraguas poliéster Ø 96 cm Winsler", "sub": "Clásico", "catFinal": "paraguas", "eco": false },
+    { "id": "mk3553", "nombre": "Paraguas pongee Ø 98 cm Elmer", "sub": "Clásico", "catFinal": "paraguas", "eco": false },
+    { "id": "mk21879", "nombre": "Paraguas plegable Ø 90 cm Ottis", "sub": "Plegable", "catFinal": "paraguas", "eco": false }
+  ],
+  "issues": [
+    "mk6105 Panan: el blurb afirmaba 'tamaño golf' y la ficha no lo dice (solo Budyx se llama Golf); reescrito como paraguas grande de 130 cm.",
+    "mk21879 Ottis: el blurb decía '90 cm de diámetro abierto'; la ficha solo da Ø 90, se deja '90 cm de diámetro'.",
+    "Subcategoría 'Compacto' en mk5707 Brosmon, mk21521 Winsler y mk3553 Elmer cambiada a 'Clásico': la ficha no indica que sean compactos ni plegables (Ø 96-98 cm con varillas de metal o fibra)."
+  ]
+}
