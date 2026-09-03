@@ -27,7 +27,7 @@
     <form class="busca" role="search" action="catalogo.html"><label class="visually-hidden" for="q">Buscar producto</label><input id="q" name="q" type="search" placeholder="Busca: taza, bolsa algodón, bidón, sudadera…" autocomplete="off"><button type="submit" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button></form>
     <div class="acciones">
       <button class="btn btn-s btn-ico menu-btn" id="menu-btn" aria-label="Abrir buscador"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
-      <a class="btn btn-s btn-lista" href="#" data-abrir-cajon><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 3h4v15H4V6h4z"/><path d="M8 11h8M8 15h5"/></svg><span class="visually-hidden">Ver </span>Mi presupuesto<span class="cuenta" hidden>0</span></a>
+      <a class="btn btn-s btn-lista" href="#" data-abrir-cajon><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 3h4v15H4V6h4z"/><path d="M8 11h8M8 15h5"/></svg><span class="visually-hidden">Ver </span><span class="btn-txt">Mi presupuesto</span><span class="cuenta" hidden>0</span></a>
     </div>
   </div>
   <nav class="navcat" aria-label="Categorías"><div class="wrap"><ul id="navcat"></ul></div></nav>
@@ -39,13 +39,13 @@
       <div>
         <span class="eyebrow"><svg><use href="#reg"/></svg>Taller de serigrafía en Premià de Dalt</span>
         <h1>Tu logo en tazas, bolsas y camisetas. <em>Desde 1 unidad.</em></h1>
-        <p class="sub">Elige el producto, súbenos el logo y lo estampamos en nuestro taller, a 20 minutos de Barcelona. Si corre prisa, lo tienes en 24-48 h.</p>
+        <p class="sub">Elige el producto, súbenos el logo y lo estampamos en nuestro taller de Premià de Dalt, en el Maresme. Si corre prisa, lo tienes en 24-48 h.</p>
         <div class="hero-cta"><a class="btn btn-p" href="catalogo.html">Ver el catálogo</a><a class="btn btn-s" href="#presupuesto">Pedir presupuesto</a></div>
         <ul class="hechos">
           <li><svg><use href="#check"/></svg>Sin cantidad mínima</li>
           <li><svg><use href="#check"/></svg>Urgentes en 24-48 h</li>
-          <li><svg><use href="#check"/></svg>Adaptamos tu logo sin coste</li>
-          <li><svg><use href="#check"/></svg>Recogida en el taller o envío</li>
+          <li><svg><use href="#check"/></svg>Adaptamos tu logo al producto</li>
+          <li><svg><use href="#check"/></svg>Taller propio de más de 1.000 m²</li>
         </ul>
       </div>
       <div class="mosaico" id="mosaico" aria-label="Productos destacados"></div>
@@ -54,7 +54,7 @@
 
   <section class="sec" id="categorias">
     <div class="wrap">
-      <div class="sec-cab"><div><span class="eyebrow"><svg><use href="#reg"/></svg>Catálogo</span><h2>Lo que más se estampa</h2><p>Un catálogo corto a propósito: solo lo que se pide de verdad, con fotos y stock del proveedor. Si buscas otra cosa, seguro que la tenemos.</p></div><a class="btn btn-t" href="catalogo.html">Ver todo el catálogo →</a></div>
+      <div class="sec-cab"><div><span class="eyebrow"><svg><use href="#reg"/></svg>Catálogo</span><h2>Lo que más se estampa</h2><p>Un catálogo corto a propósito: solo lo que se pide de verdad, con las fotos y los datos del proveedor. Si buscas otra cosa, pregúntanos.</p></div><a class="btn btn-t" href="catalogo.html">Ver todo el catálogo →</a></div>
       <div class="cats" id="cats"></div>
     </div>
   </section>
@@ -71,8 +71,8 @@
       <div class="sec-cab"><div><span class="eyebrow"><svg><use href="#reg"/></svg>Cómo funciona</span><h2>Tres pasos y a estampar</h2></div></div>
       <div class="pasos">
         <div class="paso"><h3>Elige producto y cantidad</h3><p>El precio por unidad sale al momento, con IVA y marcaje a 1 tinta incluidos. Añade lo que quieras a tu presupuesto.</p></div>
-        <div class="paso"><h3>Súbenos el logo</h3><p>Vale un PDF, un AI o un PNG. Nuestro departamento de diseño lo adapta al producto y te manda una muestra virtual antes de fabricar.</p></div>
-        <div class="paso"><h3>Lo estampamos y lo recibes</h3><p>Serigrafía, sublimación, bordado o DTF en nuestro taller de Premià de Dalt. Recogida en el taller o envío. Urgencias en 24-48 h.</p></div>
+        <div class="paso"><h3>Súbenos el logo</h3><p>Vale un PDF, un AI o un PNG. Nuestro departamento de creación lo adapta al producto antes de fabricar.</p></div>
+        <div class="paso"><h3>Lo estampamos y lo recibes</h3><p>Serigrafía, sublimación, tampografía, transfer, vinilo o bordado en nuestro taller de Premià de Dalt. Si corre prisa, urgentes en 24-48 h.</p></div>
       </div>
     </div>
   </section>
@@ -81,14 +81,12 @@
     <div class="wrap">
       <div class="sec-cab"><div><span class="eyebrow"><svg><use href="#reg"/></svg>Técnicas</span><h2>Cada producto con su marcaje</h2><p>Te recomendamos la técnica según el material, la cantidad y los colores del logo.</p></div></div>
       <div class="tecs">
-        <div class="tec"><b>Serigrafía</b><p>Tinta a tinta, la más resistente y la más económica en tiradas medias y grandes.</p><small>Camisetas, bolsas, tazas</small></div>
+        <div class="tec"><b>Serigrafía</b><p>Una tinta por color. Resistente y la más económica en tiradas medias y grandes.</p><small>Camisetas, bolsas, tazas</small></div>
         <div class="tec"><b>Sublimación</b><p>Todo color fundido en el material, sin relieve. Fotos y degradados.</p><small>Tazas, lanyards, poliéster</small></div>
-        <div class="tec"><b>DTF y transfer</b><p>Todo color sobre algodón desde 1 unidad, con buen detalle en logos pequeños.</p><small>Camisetas, sudaderas, bolsas</small></div>
+        <div class="tec"><b>Transfer</b><p>Todo color sobre textil desde 1 unidad, con buen detalle en logos pequeños.</p><small>Camisetas, sudaderas, bolsas</small></div>
         <div class="tec"><b>Vinilo textil</b><p>Nombres, dorsales y logos de un color en pocas unidades.</p><small>Equipaciones, uniformes</small></div>
         <div class="tec"><b>Tampografía</b><p>Para superficies pequeñas o curvas, a una o varias tintas.</p><small>Bolis, bidones, llaveros</small></div>
-        <div class="tec"><b>Bordado</b><p>Hilo sobre prenda. Aguanta lavados sin fin y da imagen de uniforme.</p><small>Polos, gorras, delantales</small></div>
-        <div class="tec"><b>Grabado láser</b><p>Marca permanente sobre metal, madera o bambú, sin tinta.</p><small>Botellas de acero, bolis metálicos</small></div>
-        <div class="tec"><b>Impresión UV</b><p>Todo color directo sobre objetos rígidos.</p><small>Libretas, posavasos, cajas</small></div>
+        <div class="tec"><b>Bordado</b><p>Hilo sobre prenda. Aguanta bien los lavados y da imagen de uniforme.</p><small>Polos, gorras, delantales</small></div>
       </div>
     </div>
   </section>
@@ -97,13 +95,13 @@
     <div class="wrap taller">
       <figure>
         <img src="img/taller.jpg" alt="Carrusel de serigrafía del taller de eTazas con operarios estampando camisetas" loading="lazy" width="400" height="178">
-        <img class="oficina" src="img/oficina.jpg" alt="Oficina y departamento de diseño de eTazas" loading="lazy" width="400" height="267">
-        <figcaption>Carrusel de serigrafía y departamento de diseño, polígono Buvisa (Premià de Dalt).</figcaption>
+        <img class="oficina" src="img/oficina.jpg" alt="Oficinas de eTazas" loading="lazy" width="400" height="267">
+        <figcaption>Carrusel de serigrafía y oficinas de eTazas, polígono Buvisa (Premià de Dalt).</figcaption>
       </figure>
       <div>
         <span class="eyebrow"><svg><use href="#reg"/></svg>Nuestro taller</span>
-        <h2>Se estampa aquí, no se subcontrata</h2>
-        <p class="sub" style="margin-top:12px;color:var(--tinta-2)">eTazas es la tienda online de MG Merchandising, con décadas de estampación textil en el polígono Buvisa de Premià de Dalt. Carrusel de serigrafía, sublimación, bordado y DTF bajo el mismo techo, y un showroom donde tocar los productos antes de pedir.</p>
+        <h2>Taller propio en Premià de Dalt</h2>
+        <p class="sub" style="margin-top:12px;color:var(--tinta-2)">eTazas es la tienda online de MG Merchandising SCP, taller de estampación textil y merchandising publicitario en el polígono Buvisa de Premià de Dalt. Más de 1.000 m² con serigrafía, sublimación, tampografía, transfer, vinilo y bordado, y un showroom de 120 m² con más de 500 artículos para tocar antes de pedir.</p>
         <div class="datos">
           <div><b class="num">1.000 m²</b><span>de taller</span></div>
           <div><b class="num">500+</b><span>artículos en showroom</span></div>
@@ -125,8 +123,8 @@
     <div class="wrap presu">
       <div>
         <span class="eyebrow"><svg><use href="#reg"/></svg>Presupuesto</span>
-        <h2>Presupuesto cerrado en menos de 24 h</h2>
-        <p class="sub" style="margin-top:12px;color:var(--tinta-2)">Cuéntanos qué quieres estampar y cuántas unidades. Te respondemos con precio cerrado y una muestra virtual con tu logo.</p>
+        <h2>Pídenos presupuesto</h2>
+        <p class="sub" style="margin-top:12px;color:var(--tinta-2)">Cuéntanos qué quieres estampar y cuántas unidades. Te respondemos con el precio cerrado y nuestro departamento de creación adapta el logo al producto.</p>
         <ul class="hechos" style="flex-direction:column;gap:10px;margin-top:20px">
           <li><svg><use href="#check"/></svg><a href="https://wa.me/34670266434" target="_blank" rel="noopener">WhatsApp 670 266 434</a></li>
           <li><svg><use href="#check"/></svg><a href="tel:+34611243105">611 24 31 05</a></li>

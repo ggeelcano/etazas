@@ -59,11 +59,10 @@
     const col = p.colores ? `<span class="colores">${(p.coloresHex || []).slice(0, 4).map(h => `<i style="--c:${h}"></i>`).join("")}${p.colores} ${p.colores === 1 ? "color" : "colores"}</span>` : "";
     const desde = p.desde ? `<div class="precio"><small>desde</small><b class="num">${eur(p.desde)}<i>/ud</i></b></div>` : `<div class="precio"><small>precio</small><b>a consultar</b></div>`;
     return `<article class="card" data-id="${p.id}">
-      <div class="etq">${etq}</div>
       <div class="card-img"><img src="${esc(p.img)}" alt="${esc(p.nombre)}" loading="lazy" width="700" height="700"></div>
-      <div class="card-b"><span class="card-sub">${esc(catName(p.cat))}${p.sub ? " · " + esc(p.sub) : ""}</span>
+      <div class="card-b"><div class="etq">${etq}<span class="card-sub">${esc(p.sub || catName(p.cat))}</span></div>
         <h3><a href="#p=${p.id}" data-ficha="${p.id}">${esc(p.nombre)}</a></h3>
-        <span class="card-ref"><span class="marca">${esc(p.marca)}</span> ${esc(p.ref)}${col ? " · " : ""}${col}</span>
+        <span class="card-ref"><span class="marca">${esc(p.marca)}</span><span>${esc(p.ref)}</span>${col}</span>
         <div class="card-pie">${desde}<button class="add" data-add="${p.id}" aria-label="Añadir ${esc(p.nombre)} al presupuesto" title="Añadir al presupuesto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button></div>
       </div></article>`;
   }
@@ -99,7 +98,7 @@
       <label>Marcaje<select id="calc-m">${Object.entries(MARCAJE).map(([k, v]) => `<option value="${k}" ${k === fichaMarc ? "selected" : ""}>${v.n}${k === "t1" ? " (incluido)" : ""}</option>`).join("")}</select></label></div>
       ${p.base ? `<div class="tiers" role="group" aria-label="Precio por unidad según cantidad">${QTYS.map(q => `<button data-q="${q}" aria-pressed="${q === fichaQ}"><small>${q} ud${q > 1 ? "s" : ""}</small><b class="num">${eur(unitario(p, q, fichaMarc))}</b></button>`).join("")}</div>
       <div class="total"><div class="ud">Precio unidad <b class="num">${eur(u)}</b></div><div class="sum"><b class="num">${eur(u * fichaQ)}</b><small>${fichaQ} uds · IVA incluido</small></div></div>
-      <p class="nota">Precio orientativo con marcaje ${MARCAJE[fichaMarc].n.toLowerCase()} incluido. Te confirmamos el precio cerrado con tu logo en menos de 24 h.</p>` : `<p class="nota">Precio según cantidad y marcaje. Pídenos presupuesto y te lo mandamos en menos de 24 h.</p>`}
+      <p class="nota">Precio orientativo con marcaje ${MARCAJE[fichaMarc].n.toLowerCase()} incluido. Te confirmamos el precio cerrado cuando nos pases el logo.</p>` : `<p class="nota">Precio según cantidad y marcaje. Pídenos presupuesto por WhatsApp o correo.</p>`}
       <div class="calc-btns"><button class="btn btn-p" data-add-ficha><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>Añadir al presupuesto</button>
       <a class="btn btn-s" target="_blank" rel="noopener" href="https://wa.me/${WA}?text=${encodeURIComponent(`Hola eTazas, quiero presupuesto de ${fichaQ} uds de ${p.nombre} (ref. ${p.ref}), ${MARCAJE[fichaMarc].n.toLowerCase()}. Os paso el logo por aquí.`)}"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2m0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2"/></svg>Pedir por WhatsApp</a></div>`;
   }
@@ -119,7 +118,7 @@
   /* ---------- Portada ---------- */
   function portada() {
     const tiles = $("#cats"); if (tiles) tiles.innerHTML = CATS.map(c => `<a class="cat" href="catalogo.html?cat=${c.slug}"><img src="${esc(c.img)}" alt="" loading="lazy" width="76" height="76"><span><b>${esc(c.nombre)}</b><span>${c.n} referencias</span></span></a>`).join("");
-    const mos = $("#mosaico"); if (mos) { const top = P.filter(p => p.portada).slice(0, 5); mos.innerHTML = top.map((p, i) => `<a href="catalogo.html#p=${p.id}"><img src="${esc(p.img)}" alt="${esc(p.nombre)}" ${i ? 'loading="lazy"' : ""}><span>${esc(catName(p.cat))}</span></a>`).join(""); }
+    const mos = $("#mosaico"); if (mos) { const top = P.filter(p => p.portada).slice(0, 4); mos.innerHTML = top.map((p, i) => `<a href="catalogo.html#p=${p.id}"><img src="${esc(p.img)}" alt="${esc(p.nombre)}" ${i ? 'loading="lazy"' : ""}><span>${esc(catName(p.cat))}</span></a>`).join(""); }
     const mas = $("#mas-pedidos"); if (mas) mas.innerHTML = P.filter(p => p.destacado).slice(0, 8).map(tarjeta).join("");
     const eco = $("#eco-grid"); if (eco) eco.innerHTML = P.filter(p => p.eco && p.pick).slice(0, 4).map(tarjeta).join("");
     const sel = $("#f-producto"); if (sel) sel.innerHTML = `<option value="">Elige una categoría</option>` + CATS.map(c => `<option>${esc(c.nombre)}</option>`).join("") + `<option>Otro / varios</option>`;
@@ -146,7 +145,7 @@
       <div class="filtro"><h3>Proveedor</h3>${["Makito", "Roly"].map(m => `<label><input type="checkbox" name="marca" value="${m}"> ${m} <span class="n">${P.filter(p => p.marca === m).length}</span></label>`).join("")}</div>
       <div class="filtro"><h3>Sostenible</h3><label><input type="checkbox" name="eco" ${st.eco ? "checked" : ""}> Solo productos eco <span class="n">${P.filter(p => p.eco).length}</span></label></div>
       <div class="filtro"><h3>Técnica de marcaje</h3>${TEC.map(([t, n]) => `<label><input type="checkbox" name="tec" value="${esc(t)}"> ${esc(t)} <span class="n">${n}</span></label>`).join("")}</div>
-      <div class="conectado"><i></i><span>Catálogo sincronizado con Makito y Roly: ${P.length} referencias, stock y fotos del proveedor.</span></div>`;
+      <div class="conectado"><i></i><span>Catálogo sincronizado con Makito y Roly: ${P.length} referencias con las fotos y los datos del proveedor.</span></div>`;
     const norm = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
     function filtrar() {
       const q = norm(st.q); const toks = q.split(/\s+/).filter(Boolean);
@@ -162,7 +161,7 @@
       const r = filtrar();
       $("#cat-titulo").textContent = st.q ? `Resultados para «${st.q}»` : (st.cat ? catName(st.cat) : "Todo el catálogo");
       $("#cat-n").textContent = `${r.length} ${r.length === 1 ? "producto" : "productos"}`;
-      document.title = (st.cat ? catName(st.cat) + " personalizadas" : "Catálogo") + " · eTazas";
+      document.title = (st.cat ? catName(st.cat) + " con tu logo" : "Catálogo") + " · eTazas";
       const chips = []; if (st.q) chips.push(["q", "Búsqueda: " + st.q]); if (st.cat) chips.push(["cat", catName(st.cat)]); st.marca.forEach(m => chips.push(["marca:" + m, m])); if (st.eco) chips.push(["eco", "Eco"]); st.tec.forEach(t => chips.push(["tec:" + t, t]));
       $("#chips").innerHTML = chips.map(c => `<button class="chip" data-chip="${esc(c[0])}" aria-label="Quitar filtro ${esc(c[1])}">${esc(c[1])}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>`).join("");
       const g = $("#grid");
