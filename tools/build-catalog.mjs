@@ -12,9 +12,14 @@ const curados = fs.readdirSync(curDir).filter(f => f.endsWith(".json")).map(f =>
 const CATS = [
   ["tazas", "Tazas y vasos"], ["bolsas", "Bolsas de tela"], ["camisetas", "Camisetas"], ["bidones", "Bidones y botellas"],
   ["boligrafos", "Bolígrafos y lápices"], ["libretas", "Libretas y agendas"], ["sudaderas", "Sudaderas"], ["polos", "Polos"],
-  ["gorras", "Gorras"], ["termos", "Termos y vasos térmicos"], ["mochilas", "Mochilas de cuerdas"], ["paraguas", "Paraguas"],
+  ["abrigos", "Chaquetas y chalecos"], ["gorras", "Gorras"], ["termos", "Termos y vasos térmicos"], ["mochilas", "Mochilas y bolsas de deporte"], ["paraguas", "Paraguas"],
   ["delantales", "Delantales"], ["neceseres", "Neceseres y estuches"], ["lanyards", "Lanyards"], ["posavasos", "Posavasos"],
 ];
+// reclasificación por nombre: prendas que no son camisetas/sudaderas y sets que no son libretas
+const NO_PRENDA = /pantal|falda|malla|leggin|\btop\b|body|bodies|bañador|banador|short|bermuda|calcet|ropa interior|boxer|slip/i;
+const ABRIGO = /parka|chaleco|softshell|polar|chaqueta|cortavientos|chubasquero|anorak|abrigo|plum[ií]fero/i;
+const SET_NO_LIBRETA = /^set\b.*(termo|botella|paraguas|powerbank|bid[oó]n|taza)/i;
+const GADGET = /calentador|altavoz|cargador|powerbank|inal[aá]mbric/i;
 const TEC_MAP = { "SERIGRAFÍA": "Serigrafía", "TAMPOGRAFÍA": "Tampografía", "BORDADO": "Bordado", "TRANSFER SERIGRÁFICO": "Transfer", "TRANSFER DIGITAL": "Transfer digital", "SUBLIMACIÓN": "Sublimación", "LASER": "Láser", "GRABACIÓN": "Láser", "IMPRESIÓN DIGITAL": "Impresión digital", "UV": "Impresión UV", "DTF": "DTF", "DOMING": "Doming", "OFFSET": "Offset", "GOFRADO": "Gofrado", "TERMOGRABADO": "Termograbado", "IMPRESIÓN DIGITAL UV": "Impresión UV" };
 function tecnicas(s) {
   if (!s) return [];
@@ -45,7 +50,13 @@ for (const [id, src] of Object.entries(byId)) {
   let n = nombres[id]; let pk = picks[id];
   if (!n && !pk) { const r = porModelo(src); if (r) { if (r._pick) pk = r; else n = r; } }
   if (!n && !pk) sinNombre++;
-  const catFinal = (pk && pk.catFinal) || (n && n.catFinal) || (src.cat === "eco" ? "camisetas" : src.cat);
+  let catFinal = (pk && pk.catFinal) || (n && n.catFinal) || (src.cat === "eco" ? "camisetas" : src.cat);
+  const nombreFinal = (pk && pk.nombre) || (n && n.nombre) || src.nombre;
+  const textoClas = nombreFinal + " " + src.nombre + " " + (src.desc || "").slice(0, 80);
+  if (["camisetas", "sudaderas", "polos"].includes(catFinal) && NO_PRENDA.test(nombreFinal)) continue;           // pantalones, mallas, tops...
+  if (["camisetas", "sudaderas", "polos"].includes(catFinal) && ABRIGO.test(nombreFinal)) catFinal = "abrigos";     // parkas, chalecos, softshell, polares
+  if (catFinal === "libretas" && SET_NO_LIBRETA.test(nombreFinal)) continue;                                          // sets con termo/botella/paraguas
+  if (!/^[A-Za-z0-9_-]+$/.test(id)) continue;
   const rm = src.marca === "Roly" ? rolyModels[src.ref] : null;
   let material = src.material || "", medidas = src.medidas || "", tallas = [], coloresNombres = [], galeriaSrc = src.imgs && src.imgs.length ? src.imgs.slice() : [src.img];
   if (rm && !rm.error) {
@@ -58,28 +69,24 @@ for (const [id, src] of Object.entries(byId)) {
   }
   const p = {
     id, marca: src.marca, ref: src.ref, cat: catFinal, sub: (pk && pk.sub) || (n && n.sub) || "",
-    nombre: (pk && pk.nombre) || (n && n.nombre) || src.nombre,
+    nombre: nombreFinal,
     img: `img/p/${id}.jpg`, imgSrc: src.img,
     galeria: [`img/p/${id}.jpg`], galeriaSrc,
     desc: (pk && pk.blurb) || (src.marca === "Roly" ? src.desc : ""),
     material: material || src.composicion || "", capacidad: src.capacidad || "", medidas: medidas.replace(/(\d+),(\d\d)/g, "$1,$2 cm").replace(/,00 cm/g, " cm"),
-    tecnicas: src.marca === "Roly" ? ["Serigrafía", "DTF", "Bordado", "Vinilo", "Transfer"] : tecnicas(src.tecnicas),
+    tecnicas: src.marca === "Roly" ? (catFinal === "abrigos" ? ["Bordado", "Transfer"] : catFinal === "gorras" ? ["Bordado", "Serigrafía", "Transfer"] : ["Serigrafía", "Transfer", "Bordado", "Vinilo"]) : tecnicas(src.tecnicas),
     colores: src.marca === "Roly" ? (coloresNombres.length || null) : (src.nColores || null),
-    coloresNombres, coloresHex: coloresNombres.map(hex).filter(Boolean),
+    coloresNombres, coloresHex: coloresNombres.map(c => { const h = hex(c); return h && /^#[0-9a-f]{6}$/i.test(h) ? h : ""; }),
     tallas, eco: !!((pk && pk.eco) || (n && n.eco) || src.eco || /org[aá]nic|recicl|rpet|bamb|corcho|kraft/i.test(material + " " + src.composicion + " " + src.nombre)),
-    base: pk ? pk.base : null, desde: pk ? pk.desde : null, pick: !!pk, destacado: !!(pk && pk.destacado), portada: false,
+    base: pk ? pk.base : null, desde: pk ? pk.desde : null, pick: !!(pk && !GADGET.test(textoClas)), destacado: !!(pk && pk.destacado && !GADGET.test(textoClas)), portada: false,
   };
+  if (!p.pick) { p.base = null; p.desde = null; }
   if (p.pick && p.galeriaSrc.length > 1) p.galeria = p.galeriaSrc.slice(0, 6).map((u, i) => i === 0 ? `img/p/${id}.jpg` : `img/p/${id}-${i}.jpg`);
+  // solo rutas con fichero descargado (la principal siempre se publica; si falta, se baja con download-images)
+  p.galeria = p.galeria.filter((g, i) => i === 0 || fs.existsSync(path.join(ROOT, g)));
   productos.push(p);
 }
-// precios por defecto (orientativos) para los no-pick: mediana de los picks de su categoría
-for (const [slug] of CATS) {
-  const pk = productos.filter(p => p.cat === slug && p.pick && p.base);
-  if (!pk.length) continue;
-  const med = a => { const s = a.slice().sort((x, y) => x - y); return s[Math.floor(s.length / 2)]; };
-  const base = med(pk.map(p => p.base)), desde = med(pk.map(p => p.desde));
-  for (const p of productos) if (p.cat === slug && !p.pick) { p.base = base; p.desde = desde; }
-}
+// los no-pick no llevan precio (la web muestra "a consultar"): nada de precios inventados
 // portada: 5 destacados variados (una categoría cada uno)
 const usadas = new Set();
 for (const slug of ["tazas", "bolsas", "camisetas", "bidones", "sudaderas", "boligrafos"]) {
@@ -91,7 +98,8 @@ productos.sort((a, b) => (orden[a.cat] ?? 99) - (orden[b.cat] ?? 99) || (b.desta
 const categorias = CATS.map(([slug, nombre]) => { const l = productos.filter(p => p.cat === slug); const d = l.find(p => p.destacado) || l[0]; return { slug, nombre, n: l.length, img: d ? d.img : "" }; }).filter(c => c.n > 0);
 const cat = { generado: process.env.FECHA || "", categorias, productos };
 fs.writeFileSync(path.join(D, "catalogo.json"), JSON.stringify(cat, null, 1));
-const web = { categorias, productos: productos.map(p => { const { imgSrc, galeriaSrc, ...rest } = p; return rest; }) };
+// versión web sin campos vacíos ni URLs de origen (menos peso)
+const web = { categorias, productos: productos.map(p => { const o = {}; for (const [k, v] of Object.entries(p)) { if (k === "imgSrc" || k === "galeriaSrc") continue; if (v === "" || v === null || v === false || (Array.isArray(v) && v.length === 0)) continue; if (k === "galeria" && v.length === 1) continue; if (k === "coloresHex" && !v.some(Boolean)) continue; o[k] = v; } return o; }) };
 fs.writeFileSync(path.join(D, "catalogo.js"), "window.CATALOGO=" + JSON.stringify(web) + ";");
 console.log("productos:", productos.length, "picks:", productos.filter(p => p.pick).length, "destacados:", productos.filter(p => p.destacado).length, "sin nombre curado:", sinNombre);
 console.log(categorias.map(c => `${c.slug}:${c.n}`).join("  "));

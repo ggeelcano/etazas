@@ -10,7 +10,7 @@ const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 const jobs = [];
 for (const p of CAT.productos) {
   jobs.push({ url: p.imgSrc, file: `${p.id}.jpg` });
-  if (p.destacado && p.galeriaSrc) p.galeriaSrc.forEach((u, i) => { if (i > 0) jobs.push({ url: u, file: `${p.id}-${i}.jpg` }); });
+  if (p.pick && p.galeriaSrc) p.galeriaSrc.slice(0, 6).forEach((u, i) => { if (i > 0) jobs.push({ url: u, file: `${p.id}-${i}.jpg` }); });
 }
 let ok = 0, skip = 0, fail = 0;
 async function worker(q) {
