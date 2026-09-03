@@ -30,6 +30,7 @@ html { -webkit-text-size-adjust: 100%; overflow-x: hidden; scroll-behavior: smoo
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
 body { margin: 0; background: var(--papel); color: var(--tinta); font-family: var(--cuerpo); font-size: 16px; line-height: 1.5; min-width: 320px; }
 img { max-width: 100%; height: auto; display: block; }
+[hidden] { display: none !important; }
 a { color: var(--ciruela); text-decoration-thickness: 1px; text-underline-offset: 2px; }
 a:hover { color: var(--magenta); }
 button, input, select, textarea { font: inherit; color: inherit; }
@@ -99,7 +100,7 @@ p { margin: 0; }
 .mosaico img { width: 100%; height: 100%; object-fit: contain; padding: 10px; }
 .mosaico span { position: absolute; left: 10px; bottom: 10px; background: var(--tinta); color: #fff; font-size: .75rem; font-weight: 600; padding: 4px 9px; border-radius: 999px; }
 .mosaico a:first-child { grid-row: span 2; aspect-ratio: auto; }
-.mosaico a:first-child img { padding: 0; object-fit: cover; }
+.mosaico a:first-child img { padding: 24px; object-fit: contain; }
 
 /* ---------- Secciones ---------- */
 .sec { padding: clamp(28px, 5vw, 56px) 0; }
