@@ -1,0 +1,17 @@
+name = "etazas-ia"
+main = "worker.js"
+compatibility_date = "2026-06-01"
+
+# Motor por orden de preferencia: ANTHROPIC_API_KEY (Claude) > GEMINI_API_KEY (Gemini) > Workers AI (Llama, incluido en la cuenta CF).
+# Las claves van como SECRET, nunca aquí:
+#   npx wrangler secret put ANTHROPIC_API_KEY
+#   npx wrangler secret put GEMINI_API_KEY
+[vars]
+ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
+GEMINI_MODEL = "gemini-3.5-flash-lite"
+
+[ai]
+binding = "AI"
+
+[observability]
+enabled = true

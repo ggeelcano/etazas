@@ -18,7 +18,7 @@ await send("Page.enable"); await send("Runtime.enable");
 await send("Emulation.setDeviceMetricsOverride", { width: w, height: w < 700 ? 844 : 900, deviceScaleFactor: w < 700 ? 2 : 1, mobile: w < 700 });
 await send("Page.navigate", { url }); await sleep(2500);
 await send("Runtime.evaluate", { expression: "document.fonts.ready.then(()=>1)", awaitPromise: true });
-if (scroll) { await send("Runtime.evaluate", { expression: `(document.querySelector('.modal-caja')||document.documentElement).scrollTop=${scroll};1` }); await sleep(400); }
+if (scroll) { await send("Runtime.evaluate", { expression: `(()=>{const m=document.querySelector('.modal[open] .modal-caja'); if(m) m.scrollTop=${scroll}; else { document.documentElement.style.scrollBehavior='auto'; window.scrollTo(0,${scroll}); } return 1;})()` }); await sleep(500); }
 const shot = await send("Page.captureScreenshot", { format: "png" });
 fs.writeFileSync(path.join(DIR, out || "_captura.png"), Buffer.from(shot.data, "base64"));
 ws.close(); chrome.kill();

@@ -1,7 +1,11 @@
 tools/_chromeprofile*/
-tools/_cap-*.png
+tools/_*.png
 tools/_medidas.json
 tools/_og.html
+tools/_espia.json
+tools/_mocks.html
+tools/_mock-targets.json
+tools/_chat-copy.json
 data/cand/
 data/makito-details.json
 data/roly-cdp*.json
