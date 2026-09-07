@@ -4,7 +4,8 @@ import fs from "node:fs";
 import path from "node:path";
 const DIR = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1"));
 const [url, wS, out, scrollS] = process.argv.slice(2);
-const w = Number(wS || 390), scroll = Number(scrollS || 0);
+// scrollY puede ser un número de píxeles o un selector CSS (se hace scrollIntoView del elemento)
+const w = Number(wS || 390), scroll = /^\d+$/.test(scrollS || "") ? Number(scrollS) : 0, selector = scrollS && !/^\d+$/.test(scrollS) ? scrollS : "";
 const CHROME = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const PORT = 9349;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -19,6 +20,7 @@ await send("Emulation.setDeviceMetricsOverride", { width: w, height: w < 700 ? 8
 await send("Page.navigate", { url }); await sleep(2500);
 await send("Runtime.evaluate", { expression: "document.fonts.ready.then(()=>1)", awaitPromise: true });
 if (scroll) { await send("Runtime.evaluate", { expression: `(()=>{const m=document.querySelector('.modal[open] .modal-caja'); if(m) m.scrollTop=${scroll}; else { document.documentElement.style.scrollBehavior='auto'; window.scrollTo(0,${scroll}); } return 1;})()` }); await sleep(500); }
+if (selector) { await send("Runtime.evaluate", { expression: `(()=>{document.documentElement.style.scrollBehavior='auto'; const el=document.querySelector(${JSON.stringify(selector)}); if(!el) return 'NO:'+${JSON.stringify(selector)}; const cab=document.querySelector('.cab'); const y=el.getBoundingClientRect().top+window.scrollY-((cab?cab.offsetHeight:0)+12); window.scrollTo(0,y); return y;})()` }); await sleep(800); }
 const shot = await send("Page.captureScreenshot", { format: "png" });
 fs.writeFileSync(path.join(DIR, out || "_captura.png"), Buffer.from(shot.data, "base64"));
 ws.close(); chrome.kill();

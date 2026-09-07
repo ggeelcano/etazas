@@ -6,6 +6,7 @@ tools/_espia.json
 tools/_mocks.html
 tools/_mock-targets.json
 tools/_chat-copy.json
+tools/_*.json
 data/cand/
 data/makito-details.json
 data/roly-cdp*.json

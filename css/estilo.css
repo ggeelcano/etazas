@@ -114,6 +114,18 @@ a:hover { color: var(--magenta-2); }
 .banner-img { position: relative; display: flex; align-items: center; justify-content: center; background: #fff; min-width: 0; }
 .banner-img .mock { width: 100%; aspect-ratio: var(--ar, 1); }
 .banner-img img { width: 100%; height: 100%; object-fit: cover; }
+/* banner con foto real del taller en vez de mockup */
+.banner-foto { background: #fff; display: block; }
+.banner-foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 62%; }
+.foto-tag { position: absolute; left: 10px; bottom: 10px; background: rgba(43, 31, 46, .82); color: #fff; font-size: .68rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 5px 9px; border-radius: 999px; white-space: nowrap; }
+
+/* ---------- Trabajos reales (fotos del taller) ---------- */
+.trabajos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.trabajos figure { margin: 0; min-width: 0; background: var(--blanco); border: 1px solid var(--niebla); border-radius: var(--radio); overflow: hidden; }
+.trabajos img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.trabajos figcaption { padding: 12px 14px 14px; }
+.trabajos figcaption b { font-family: var(--display); font-weight: 700; font-size: 1.02rem; display: block; }
+.trabajos figcaption span { font-size: .86rem; color: var(--gris); display: block; margin-top: 2px; }
 
 /* mockup "Tu logo aquí": el cuadro se coloca en % de la foto y escala con ella */
 .mock { position: relative; display: block; }
@@ -370,6 +382,7 @@ a:hover { color: var(--magenta-2); }
   .cat img { width: 56px; height: 56px; }
   .cat b { font-size: .95rem; }
   .tecs { grid-template-columns: 1fr; }
+  .trabajos { grid-template-columns: 1fr; }
   .pie-in { grid-template-columns: 1fr; gap: 20px; }
   .form .fila, .calc .fila { grid-template-columns: 1fr; }
   .tramos { font-size: .72rem; }

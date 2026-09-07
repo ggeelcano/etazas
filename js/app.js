@@ -183,7 +183,8 @@
     const tiles = $("#cats"); if (tiles) tiles.innerHTML = CATS.map(c => `<a class="cat" href="catalogo.html?cat=${esc(c.slug)}"><img src="${esc(c.img)}" alt="" loading="lazy" width="76" height="76"><span><b>${esc(c.nombre)}</b><span>${c.n} referencias</span></span></a>`).join("");
     const ban = $("#banners"); if (ban) {
       // dos banners de categoría, como los de euroserigrafia.com: título, subtítulo con datos del catálogo y precio "desde" real
-      const BANNERS = [{ cat: "camisetas", id: "roCA6690", tono: "ciruela", titulo: "Camisetas personalizadas" }, { cat: "tazas", id: "mk5290", tono: "magenta", titulo: "Tazas personalizadas" }];
+      // el banner de tazas lleva una foto real del taller (tazas con asa dorada e inicial) en vez del mockup de proveedor
+      const BANNERS = [{ cat: "camisetas", id: "roCA6690", tono: "ciruela", titulo: "Camisetas personalizadas" }, { cat: "tazas", id: "mk5290", tono: "magenta", titulo: "Tazas personalizadas", foto: { src: "img/t/tazas-asa-dorada.jpg", alt: "Tazas blancas con asa dorada y una inicial, recién hechas en el taller de eTazas", w: 1400, h: 588 } }];
       ban.innerHTML = BANNERS.map((b, i) => {
         const p = byId[b.id]; const c = CATS.find(x => x.slug === b.cat); if (!p || !c) return "";
         const enCat = P.filter(x => x.cat === b.cat);
@@ -193,7 +194,9 @@
         const marcas = [...new Set(enCat.map(x => x.marca))].join(" y ");
         return `<a class="banner banner-${b.tono}" href="catalogo.html?cat=${esc(b.cat)}">
           <div class="banner-txt"><h2>${esc(b.titulo)}</h2><p>${c.n} modelos de ${esc(marcas)}${tipos.length ? ": " + esc(tipos.join(", ")) : ""}. Con tu logo desde 1 unidad.</p><span class="btn btn-b">Desde ${eur(min)} + IVA</span></div>
-          <div class="banner-img">${imgMock(p, i ? 'loading="lazy"' : 'fetchpriority="high"')}</div></a>`;
+          <div class="banner-img${b.foto ? " banner-foto" : ""}">${b.foto
+            ? `<img src="${esc(b.foto.src)}" alt="${esc(b.foto.alt)}" width="${Number(b.foto.w)}" height="${Number(b.foto.h)}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'}><span class="foto-tag">Hecho en nuestro taller</span>`
+            : imgMock(p, i ? 'loading="lazy"' : 'fetchpriority="high"')}</div></a>`;
       }).join("");
     }
     const mas = $("#mas-pedidos"); if (mas) mas.innerHTML = P.filter(p => p.destacado).slice(0, 8).map(tarjeta).join("");
