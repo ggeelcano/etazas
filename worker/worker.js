@@ -43,11 +43,15 @@ const NEGOCIO = `DATOS DE ETAZAS (todos verificados en etazas.com y en la web de
 - Precios de la web: por unidad, SIN IVA (IVA 21 % aparte), orientativos, con marcaje a 1 tinta incluido y sin gastos de envío. El precio cerrado se confirma en el presupuesto una vez recibido el logo y la cantidad definitiva.
 - DATOS QUE NO CONSTAN (no inventar nunca): plazo de entrega estándar, gastos de envío, formas de pago, horario de atención y de la tienda. Si preguntan por ellos, di que se confirman en el presupuesto y ofrece WhatsApp o correo.`;
 
-function systemPrompt(msgs) {
+// lang: "es" | "ca" según el idioma en que el cliente está viendo la web (lo manda js/chat.js).
+function systemPrompt(msgs, lang) {
+  const idioma = lang === "ca"
+    ? `- El cliente está viendo la web en CATALÁN: responde SIEMPRE en catalán (català central estàndard, de tu), aunque los datos de abajo estén en castellano. Solo si te escribe claramente en castellano, contesta en castellano. Traduce los nombres de producto al catalán (taza→tassa, bolsa→bossa, camiseta→samarreta, bidón→bidó, bolígrafo→bolígraf, libreta→llibreta, sudadera→dessuadora, mochila→motxilla, paraguas→paraigua, delantal→davantal, termo→termo, posavasos→posagots, neceser→necesser, gorra→gorra) y las técnicas (serigrafía→serigrafia, bordado→brodat, grabado láser→gravat làser, sublimación→sublimació, tampografía→tampografia, vinilo→vinil). Tono cercano y profesional.`
+    : `- En el idioma del cliente: castellano por defecto, catalán si te escribe en catalán. Tono cercano y profesional, de tú.`;
   return `Eres el asistente de atención al cliente de la tienda online de eTazas. Atiendes en su web a empresas, ayuntamientos, colegios, asociaciones y particulares que quieren merchandising con su logo.
 
 CÓMO RESPONDES
-- En el idioma del cliente: castellano por defecto, catalán si te escribe en catalán. Tono cercano y profesional, de tú.
+${idioma}
 - MUY BREVE: de 2 a 4 frases, como en un chat de WhatsApp. Nada de cálculos paso a paso ni explicaciones de cómo has llegado al número. Como mucho TRES productos cuando pidan opciones, y de cada uno un solo precio: el de la cantidad que te hayan dicho, o el recorrido "de X € (1 ud) a Y € (250 uds)" si no la sabes. Nunca copies la tabla entera de tramos.
 - Usa SOLO los datos de abajo. Si un dato no está, NO lo inventes: dilo con naturalidad y ofrece pedir presupuesto por WhatsApp (https://wa.me/34670266434) o correo (info@etazas.com).
 - PROHIBIDO AFIRMAR (no constan y equivocarse cuesta un cliente): plazo de entrega concreto, gastos y zonas de envío, formas de pago (tarjeta, transferencia, Bizum, pago aplazado), si se emite factura, horario de atención o de visita al showroom, descuentos, stock disponible y fechas. Ante cualquiera de estas preguntas la respuesta correcta es que eso se confirma en el presupuesto o llamando, nunca "sí" ni "no". Lo único que sí puedes decir de plazos: hay urgencias en 24-48 h.
@@ -123,7 +127,8 @@ export default {
       msgs = msgs.filter((m, i, a) => i === 0 || m.role !== a[i - 1].role);
       if (!msgs.length || msgs[msgs.length - 1].role !== "user") return json({ error: "falta mensaje de usuario" }, 400);
 
-      const system = systemPrompt(msgs);
+      const lang = body.lang === "ca" ? "ca" : "es";
+      const system = systemPrompt(msgs, lang);
       const motores = [];
       if (env.ANTHROPIC_API_KEY) motores.push(["claude", () => askClaude(env, system, msgs)]);
       if (env.GEMINI_API_KEY) motores.push(["gemini", () => askGemini(env, system, msgs)]);
@@ -136,7 +141,10 @@ export default {
           fallos.push(engine + ": vacía");
         } catch (e) { fallos.push(engine + ": " + String(e.message || e).slice(0, 80)); }
       }
-      return json({ reply: "Ahora mismo no puedo responderte por aquí. Escríbenos por WhatsApp al 670 266 434 (https://wa.me/34670266434) o a info@etazas.com y te contestamos enseguida.", engine: "fallback", error: fallos.join(" | ") }, 200);
+      const sinMotor = lang === "ca"
+        ? "Ara mateix no et puc respondre per aquí. Escriu-nos per WhatsApp al 670 266 434 (https://wa.me/34670266434) o a info@etazas.com i et contestem de seguida."
+        : "Ahora mismo no puedo responderte por aquí. Escríbenos por WhatsApp al 670 266 434 (https://wa.me/34670266434) o a info@etazas.com y te contestamos enseguida.";
+      return json({ reply: sinMotor, engine: "fallback", error: fallos.join(" | ") }, 200);
     }
 
     if (url.pathname === "/" || url.pathname === "/api") {

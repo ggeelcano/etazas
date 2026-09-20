@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>eTazas · Tazas, bolsas y camisetas personalizadas en Barcelona</title>
-<meta name="description" content="Taller de serigrafía en Premià de Dalt. Tazas, bolsas de tela, camisetas, bidones y bolis con tu logo. Sin cantidad mínima y urgentes en 24-48 h.">
+<script src="data/i18n.js"></script>
+<script src="js/i18n.js"></script>
+<title data-i18n="meta.portada.title">eTazas · Tazas, bolsas y camisetas personalizadas en Barcelona</title>
+<meta name="description" content="Taller de serigrafía en Premià de Dalt. Tazas, bolsas de tela, camisetas, bidones y bolis con tu logo. Sin cantidad mínima y urgentes en 24-48 h." data-i18n-attr="content:meta.portada.desc">
 <meta property="og:title" content="eTazas · Tazas, bolsas y camisetas personalizadas">
 <meta property="og:description" content="Tu logo en tazas, bolsas y camisetas. Desde 1 unidad, taller propio en Premià de Dalt, urgentes en 24-48 h.">
 <meta property="og:image" content="https://ggeelcano.github.io/etazas/img/og.jpg?v=3">
@@ -24,19 +26,19 @@
 <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body data-pagina="portada">
-<a class="skip" href="#main">Ir al contenido</a>
+<a class="skip" href="#main" data-i18n="skip">Ir al contenido</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="reg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v22M1 12h22" stroke="currentColor" stroke-width="2"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
 
 <header class="cab">
   <div class="wrap cab-in">
-    <a class="logo" href="index.html" aria-label="eTazas, inicio"><img src="img/logo.png" alt="eTazas" width="150" height="34"></a>
-    <form class="busca" id="busca-form" role="search" action="catalogo.html"><label class="visually-hidden" for="q">Buscar producto</label><input id="q" name="q" type="search" placeholder="Busca: taza, bolsa algodón, bidón, sudadera…" autocomplete="off"><button type="submit" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button></form>
+    <a class="logo" href="index.html" aria-label="eTazas, inicio" data-i18n-attr="aria-label:cab.logoAria"><img src="img/logo.png" alt="eTazas" width="150" height="34"></a>
+    <form class="busca" id="busca-form" role="search" action="catalogo.html"><label class="visually-hidden" for="q" data-i18n="busca.label">Buscar producto</label><input id="q" name="q" type="search" placeholder="Busca: taza, bolsa algodón, bidón, sudadera…" autocomplete="off" data-i18n-attr="placeholder:busca.ph"><button type="submit" aria-label="Buscar" data-i18n-attr="aria-label:busca.btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button></form>
     <div class="acciones">
-      <button class="btn btn-s btn-ico menu-btn" id="menu-btn" aria-label="Buscar" aria-expanded="false" aria-controls="busca-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
-      <a class="btn btn-s btn-lista" href="#" data-abrir-cajon><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 3h4v15H4V6h4z"/><path d="M8 11h8M8 15h5"/></svg><span class="visually-hidden">Ver </span><span class="btn-txt">Mi presupuesto</span><span class="cuenta" hidden>0</span></a>
+      <button class="btn btn-s btn-ico menu-btn" id="menu-btn" aria-label="Buscar" aria-expanded="false" aria-controls="busca-form" data-i18n-attr="aria-label:busca.btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+      <a class="btn btn-s btn-lista" href="#" data-abrir-cajon><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 3h4v15H4V6h4z"/><path d="M8 11h8M8 15h5"/></svg><span class="visually-hidden" data-i18n="cab.ver">Ver </span><span class="btn-txt" data-i18n="cab.presu">Mi presupuesto</span><span class="cuenta" hidden>0</span></a>
     </div>
   </div>
-  <nav class="navcat" aria-label="Categorías"><div class="wrap"><ul id="navcat"></ul></div></nav>
+  <nav class="navcat" aria-label="Categorías" data-i18n-attr="aria-label:navcat.aria"><div class="wrap"><ul id="navcat"></ul></div></nav>
 </header>
 
 <main id="main">
@@ -44,72 +46,72 @@
     <div class="wrap">
       <div class="hero-cab">
         <div>
-          <span class="eyebrow"><svg><use href="#reg"/></svg>Taller de serigrafía en Premià de Dalt</span>
-          <h1>Tu logo en tazas, bolsas y camisetas. <em>Desde 1 unidad.</em></h1>
+          <span class="eyebrow" data-i18n="hero.eyebrow"><svg><use href="#reg"/></svg>Taller de serigrafía en Premià de Dalt</span>
+          <h1 data-i18n-html="hero.h1">Tu logo en tazas, bolsas y camisetas. <em>Desde 1 unidad.</em></h1>
         </div>
         <div>
-          <p class="sub">Elige el producto, súbenos el logo y lo estampamos en nuestro taller de Premià de Dalt, en el Maresme. Si corre prisa, lo tienes en 24-48 h.</p>
-          <div class="hero-cta"><a class="btn btn-p" href="catalogo.html">Ver el catálogo</a><a class="btn btn-s" href="#presupuesto">Pedir presupuesto</a></div>
+          <p class="sub" data-i18n="hero.sub">Elige el producto, súbenos el logo y lo estampamos en nuestro taller de Premià de Dalt, en el Maresme. Si corre prisa, lo tienes en 24-48 h.</p>
+          <div class="hero-cta"><a class="btn btn-p" href="catalogo.html" data-i18n="hero.catalogo">Ver el catálogo</a><a class="btn btn-s" href="#presupuesto" data-i18n="hero.presu">Pedir presupuesto</a></div>
         </div>
       </div>
       <div class="banners" id="banners"></div>
-      <ul class="confianza" aria-label="Por qué eTazas">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-6h6v6M9 11h.01M15 11h.01"/></svg><div><b>Taller propio</b><span>Más de 1.000 m² en Premià de Dalt</span></div></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 8v8M9 11l3-3 3 3"/></svg><div><b>Sin cantidad mínima</b><span>Desde 1 unidad</span></div></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg><div><b>Urgentes en 24-48 h</b><span>Si corre prisa, lo sacamos antes</span></div></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l4-1 10-10-3-3L5 16zM13 7l3 3M15 4l2-2 3 3-2 2"/></svg><div><b>Adaptamos tu logo</b><span>Departamento de creación propio</span></div></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l2-5h14l2 5M3 9h18M5 9v11h14V9M9 20v-6h6v6"/></svg><div><b>Showroom</b><span>Más de 500 artículos para tocar</span></div></li>
+      <ul class="confianza" aria-label="Por qué eTazas" data-i18n-attr="aria-label:conf.aria">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-6h6v6M9 11h.01M15 11h.01"/></svg><div><b data-i18n="conf.1b">Taller propio</b><span data-i18n="conf.1s">Más de 1.000 m² en Premià de Dalt</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 8v8M9 11l3-3 3 3"/></svg><div><b data-i18n="conf.2b">Sin cantidad mínima</b><span data-i18n="conf.2s">Desde 1 unidad</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg><div><b data-i18n="conf.3b">Urgentes en 24-48 h</b><span data-i18n="conf.3s">Si corre prisa, lo sacamos antes</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l4-1 10-10-3-3L5 16zM13 7l3 3M15 4l2-2 3 3-2 2"/></svg><div><b data-i18n="conf.4b">Adaptamos tu logo</b><span data-i18n="conf.4s">Departamento de creación propio</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l2-5h14l2 5M3 9h18M5 9v11h14V9M9 20v-6h6v6"/></svg><div><b data-i18n="conf.5b">Showroom</b><span data-i18n="conf.5s">Más de 500 artículos para tocar</span></div></li>
       </ul>
     </div>
   </section>
 
   <section class="sec" id="categorias">
     <div class="wrap">
-      <div class="sec-cab"><div><span class="eyebrow"><svg><use href="#reg"/></svg>Catálogo</span><h2>Lo que más se estampa</h2><p>Un catálogo corto a propósito: solo lo que se pide de verdad, con las fotos y los datos del proveedor. Si buscas otra cosa, pregúntanos.</p></div><a class="btn btn-t" href="catalogo.html">Ver todo el catálogo →</a></div>
+      <div class="sec-cab"><div><span class="eyebrow" data-i18n="cats.eyebrow"><svg><use href="#reg"/></svg>Catálogo</span><h2 data-i18n="cats.h2">Lo que más se estampa</h2><p data-i18n="cats.p">Un catálogo corto a propósito: solo lo que se pide de verdad, con las fotos y los datos del proveedor. Si buscas otra cosa, pregúntanos.</p></div><a class="btn btn-t" href="catalogo.html" data-i18n="cats.ver">Ver todo el catálogo →</a></div>
       <div class="cats" id="cats"></div>
     </div>
   </section>
 
   <section class="sec sec-alt" id="mas-pedidos-sec">
     <div class="wrap">
-      <div class="sec-cab"><div><span class="eyebrow"><svg><use href="#reg"/></svg>Más pedidos</span><h2>Los que salen todas las semanas</h2><p>Precios por unidad sin IVA, con marcaje a 1 tinta incluido. Bajan según la cantidad: pulsa en un producto y ves la tabla al momento.</p></div></div>
+      <div class="sec-cab"><div><span class="eyebrow" data-i18n="mas.eyebrow"><svg><use href="#reg"/></svg>Más pedidos</span><h2 data-i18n="mas.h2">Los que salen todas las semanas</h2><p data-i18n="mas.p">Precios por unidad sin IVA, con marcaje a 1 tinta incluido. Bajan según la cantidad: pulsa en un producto y ves la tabla al momento.</p></div></div>
       <div class="grid" id="mas-pedidos"></div>
     </div>
   </section>
 
   <section class="sec" id="trabajos">
     <div class="wrap">
-      <div class="sec-cab"><div><span class="eyebrow"><svg><use href="#reg"/></svg>Trabajos reales</span><h2>Salido del taller, sin retoques</h2><p>Fotos hechas en nuestro taller de Premià de Dalt con pedidos de clientes reales. El siguiente puede ser el tuyo.</p></div><a class="btn btn-t" href="#presupuesto">Pedir presupuesto →</a></div>
+      <div class="sec-cab"><div><span class="eyebrow" data-i18n="trab.eyebrow"><svg><use href="#reg"/></svg>Trabajos reales</span><h2 data-i18n="trab.h2">Salido del taller, sin retoques</h2><p data-i18n="trab.p">Fotos hechas en nuestro taller de Premià de Dalt con pedidos de clientes reales. El siguiente puede ser el tuyo.</p></div><a class="btn btn-t" href="#presupuesto" data-i18n="trab.presu">Pedir presupuesto →</a></div>
       <div class="trabajos">
-        <figure><img src="img/t/tazas-club-parchis.jpg" alt="Pirámide de tazas a todo color para el Club de Parchís Fidata, cada una con el nombre de un socio, sobre la mesa del taller" loading="lazy" width="1000" height="667"><figcaption><b>Tazas para un club de parchís</b><span>A todo color, con el nombre de cada socio</span></figcaption></figure>
-        <figure><img src="img/t/libretas-hemomas.jpg" alt="Libretas HEMOMAS II con tapa impresa a todo color y los logos de Werfen y CSL" loading="lazy" width="1000" height="667"><figcaption><b>Libretas HEMOMAS II</b><span>Tapa impresa a todo color para Werfen y CSL</span></figcaption></figure>
-        <figure><img src="img/t/agendas-ringover.jpg" alt="Agendas negras de tapa dura con el logo de Ringover impreso a una tinta" loading="lazy" width="870" height="435"><figcaption><b>Agendas corporativas</b><span>Logo de Ringover a una tinta sobre tapa negra</span></figcaption></figure>
+        <figure><img src="img/t/tazas-club-parchis.jpg" alt="Pirámide de tazas a todo color para el Club de Parchís Fidata, cada una con el nombre de un socio, sobre la mesa del taller" data-i18n-attr="alt:trab.1alt" loading="lazy" width="1000" height="667"><figcaption><b data-i18n="trab.1b">Tazas para un club de parchís</b><span data-i18n="trab.1s">A todo color, con el nombre de cada socio</span></figcaption></figure>
+        <figure><img src="img/t/libretas-hemomas.jpg" alt="Libretas HEMOMAS II con tapa impresa a todo color y los logos de Werfen y CSL" data-i18n-attr="alt:trab.2alt" loading="lazy" width="1000" height="667"><figcaption><b data-i18n="trab.2b">Libretas HEMOMAS II</b><span data-i18n="trab.2s">Tapa impresa a todo color para Werfen y CSL</span></figcaption></figure>
+        <figure><img src="img/t/agendas-ringover.jpg" alt="Agendas negras de tapa dura con el logo de Ringover impreso a una tinta" data-i18n-attr="alt:trab.3alt" loading="lazy" width="870" height="435"><figcaption><b data-i18n="trab.3b">Agendas corporativas</b><span data-i18n="trab.3s">Logo de Ringover a una tinta sobre tapa negra</span></figcaption></figure>
       </div>
     </div>
   </section>
 
   <section class="sec" id="como">
     <div class="wrap">
-      <div class="sec-cab"><div><span class="eyebrow"><svg><use href="#reg"/></svg>Cómo funciona</span><h2>Tres pasos y a estampar</h2></div></div>
+      <div class="sec-cab"><div><span class="eyebrow" data-i18n="como.eyebrow"><svg><use href="#reg"/></svg>Cómo funciona</span><h2 data-i18n="como.h2">Tres pasos y a estampar</h2></div></div>
       <div class="pasos">
-        <div class="paso"><h3>Elige producto y cantidad</h3><p>El precio por unidad sale al momento, sin IVA y con marcaje a 1 tinta incluido. Añade lo que quieras a tu presupuesto.</p></div>
-        <div class="paso"><h3>Súbenos el logo</h3><p>Vale un PDF, un AI o un PNG. Nuestro departamento de creación lo adapta al producto antes de fabricar.</p></div>
-        <div class="paso"><h3>Lo estampamos y lo recibes</h3><p>Serigrafía, sublimación, tampografía, transfer, vinilo o bordado en nuestro taller de Premià de Dalt. Si corre prisa, urgentes en 24-48 h.</p></div>
+        <div class="paso"><h3 data-i18n="como.1h">Elige producto y cantidad</h3><p data-i18n="como.1p">El precio por unidad sale al momento, sin IVA y con marcaje a 1 tinta incluido. Añade lo que quieras a tu presupuesto.</p></div>
+        <div class="paso"><h3 data-i18n="como.2h">Súbenos el logo</h3><p data-i18n="como.2p">Vale un PDF, un AI o un PNG. Nuestro departamento de creación lo adapta al producto antes de fabricar.</p></div>
+        <div class="paso"><h3 data-i18n="como.3h">Lo estampamos y lo recibes</h3><p data-i18n="como.3p">Serigrafía, sublimación, tampografía, transfer, vinilo o bordado en nuestro taller de Premià de Dalt. Si corre prisa, urgentes en 24-48 h.</p></div>
       </div>
     </div>
   </section>
 
   <section class="sec sec-alt" id="tecnicas">
     <div class="wrap">
-      <div class="sec-cab"><div><span class="eyebrow"><svg><use href="#reg"/></svg>Técnicas</span><h2>Cada producto con su marcaje</h2><p>Te recomendamos la técnica según el material, la cantidad y los colores del logo.</p></div></div>
+      <div class="sec-cab"><div><span class="eyebrow" data-i18n="tec.eyebrow"><svg><use href="#reg"/></svg>Técnicas</span><h2 data-i18n="tec.h2">Cada producto con su marcaje</h2><p data-i18n="tec.p">Te recomendamos la técnica según el material, la cantidad y los colores del logo.</p></div></div>
       <div class="tecs">
-        <div class="tec"><b>Serigrafía</b><p>Una tinta por color. Resistente y la más económica en tiradas medias y grandes.</p><small>Camisetas, bolsas, tazas</small></div>
-        <div class="tec"><b>Sublimación</b><p>Todo color fundido en el material, sin relieve. Fotos y degradados.</p><small>Tazas, lanyards, poliéster</small></div>
-        <div class="tec"><b>Transfer</b><p>Todo color sobre textil desde 1 unidad, con buen detalle en logos pequeños.</p><small>Camisetas, sudaderas, bolsas</small></div>
-        <div class="tec"><b>Vinilo textil</b><p>Nombres, dorsales y logos de un color en pocas unidades.</p><small>Equipaciones, uniformes</small></div>
-        <div class="tec"><b>Tampografía</b><p>Para superficies pequeñas o curvas, a una o varias tintas.</p><small>Bolis, bidones, llaveros</small></div>
-        <div class="tec"><b>Bordado</b><p>Hilo sobre prenda. Aguanta bien los lavados y da imagen de uniforme.</p><small>Polos, gorras, delantales</small></div>
-        <div class="tec"><b>Grabado láser</b><p>Marca permanente sobre metal, sin tinta.</p><small>Cantimploras y bidones metálicos</small></div>
+        <div class="tec"><b data-i18n="tec.1b">Serigrafía</b><p data-i18n="tec.1p">Una tinta por color. Resistente y la más económica en tiradas medias y grandes.</p><small data-i18n="tec.1s">Camisetas, bolsas, tazas</small></div>
+        <div class="tec"><b data-i18n="tec.2b">Sublimación</b><p data-i18n="tec.2p">Todo color fundido en el material, sin relieve. Fotos y degradados.</p><small data-i18n="tec.2s">Tazas, lanyards, poliéster</small></div>
+        <div class="tec"><b data-i18n="tec.3b">Transfer</b><p data-i18n="tec.3p">Todo color sobre textil desde 1 unidad, con buen detalle en logos pequeños.</p><small data-i18n="tec.3s">Camisetas, sudaderas, bolsas</small></div>
+        <div class="tec"><b data-i18n="tec.4b">Vinilo textil</b><p data-i18n="tec.4p">Nombres, dorsales y logos de un color en pocas unidades.</p><small data-i18n="tec.4s">Equipaciones, uniformes</small></div>
+        <div class="tec"><b data-i18n="tec.5b">Tampografía</b><p data-i18n="tec.5p">Para superficies pequeñas o curvas, a una o varias tintas.</p><small data-i18n="tec.5s">Bolis, bidones, llaveros</small></div>
+        <div class="tec"><b data-i18n="tec.6b">Bordado</b><p data-i18n="tec.6p">Hilo sobre prenda. Aguanta bien los lavados y da imagen de uniforme.</p><small data-i18n="tec.6s">Polos, gorras, delantales</small></div>
+        <div class="tec"><b data-i18n="tec.7b">Grabado láser</b><p data-i18n="tec.7p">Marca permanente sobre metal, sin tinta.</p><small data-i18n="tec.7s">Cantimploras y bidones metálicos</small></div>
       </div>
     </div>
   </section>
@@ -117,20 +119,20 @@
   <section class="sec" id="taller">
     <div class="wrap taller">
       <figure>
-        <img src="img/taller.jpg" alt="Carrusel de serigrafía del taller de eTazas con operarios estampando camisetas" loading="lazy" width="400" height="178">
-        <img class="oficina" src="img/oficina.jpg" alt="Oficinas de eTazas" loading="lazy" width="400" height="267">
-        <figcaption>Carrusel de serigrafía y oficinas de eTazas, polígono Buvisa (Premià de Dalt).</figcaption>
+        <img src="img/taller.jpg" alt="Carrusel de serigrafía del taller de eTazas con operarios estampando camisetas" data-i18n-attr="alt:taller.alt1" loading="lazy" width="400" height="178">
+        <img class="oficina" src="img/oficina.jpg" alt="Oficinas de eTazas" data-i18n-attr="alt:taller.alt2" loading="lazy" width="400" height="267">
+        <figcaption data-i18n="taller.cap">Carrusel de serigrafía y oficinas de eTazas, polígono Buvisa (Premià de Dalt).</figcaption>
       </figure>
       <div>
-        <span class="eyebrow"><svg><use href="#reg"/></svg>Nuestro taller</span>
-        <h2>Taller propio en Premià de Dalt</h2>
-        <p class="sub" style="margin-top:12px;color:var(--tinta-2)">eTazas es la tienda online de MG Merchandising SCP, taller de estampación textil y merchandising publicitario en el polígono Buvisa de Premià de Dalt. Más de 1.000 m² con serigrafía, sublimación, tampografía, transfer, vinilo y bordado, y un showroom de 120 m² con más de 500 artículos para tocar antes de pedir.</p>
+        <span class="eyebrow" data-i18n="taller.eyebrow"><svg><use href="#reg"/></svg>Nuestro taller</span>
+        <h2 data-i18n="taller.h2">Taller propio en Premià de Dalt</h2>
+        <p class="sub" style="margin-top:12px;color:var(--tinta-2)" data-i18n="taller.p">eTazas es la tienda online de MG Merchandising SCP, taller de estampación textil y merchandising publicitario en el polígono Buvisa de Premià de Dalt. Más de 1.000 m² con serigrafía, sublimación, tampografía, transfer, vinilo y bordado, y un showroom de 120 m² con más de 500 artículos para tocar antes de pedir.</p>
         <div class="datos">
-          <div><b class="num">1.000 m²</b><span>de taller</span></div>
-          <div><b class="num">500+</b><span>artículos en showroom</span></div>
-          <div><b class="num">24-48 h</b><span>pedidos urgentes</span></div>
+          <div><b class="num">1.000 m²</b><span data-i18n="taller.d1">de taller</span></div>
+          <div><b class="num">500+</b><span data-i18n="taller.d2">artículos en showroom</span></div>
+          <div><b class="num">24-48 h</b><span data-i18n="taller.d3">pedidos urgentes</span></div>
         </div>
-        <p style="margin-top:22px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);font-weight:600">Ya estampan con nosotros</p>
+        <p style="margin-top:22px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);font-weight:600" data-i18n="taller.clientes">Ya estampan con nosotros</p>
         <div class="logos">
           <img src="img/cli-ajuntament.jpg" alt="Ajuntament de Barcelona" loading="lazy" height="44">
           <img src="img/cli-kalise.jpg" alt="Kalise" loading="lazy" height="44">
@@ -145,34 +147,34 @@
   <section class="sec sec-alt" id="presupuesto">
     <div class="wrap presu">
       <div>
-        <span class="eyebrow"><svg><use href="#reg"/></svg>Presupuesto</span>
-        <h2>Pídenos presupuesto</h2>
-        <p class="sub" style="margin-top:12px;color:var(--tinta-2)">Cuéntanos qué quieres estampar y cuántas unidades. Te respondemos con el precio cerrado y nuestro departamento de creación adapta el logo al producto.</p>
+        <span class="eyebrow" data-i18n="presu.eyebrow"><svg><use href="#reg"/></svg>Presupuesto</span>
+        <h2 data-i18n="presu.h2">Pídenos presupuesto</h2>
+        <p class="sub" style="margin-top:12px;color:var(--tinta-2)" data-i18n="presu.p">Cuéntanos qué quieres estampar y cuántas unidades. Te respondemos con el precio cerrado y nuestro departamento de creación adapta el logo al producto.</p>
         <ul class="hechos" style="flex-direction:column;gap:10px;margin-top:20px">
           <li><svg><use href="#check"/></svg><a href="https://wa.me/34670266434" target="_blank" rel="noopener">WhatsApp 670 266 434</a></li>
           <li><svg><use href="#check"/></svg><a href="tel:+34611243105">611 24 31 05</a></li>
           <li><svg><use href="#check"/></svg><a href="mailto:info@etazas.com">info@etazas.com</a></li>
-          <li><svg><use href="#check"/></svg>Carrer Gregal 7, 2ª planta · 08338 Premià de Dalt</li>
+          <li data-i18n="presu.direccion"><svg><use href="#check"/></svg>Carrer Gregal 7, 2ª planta · 08338 Premià de Dalt</li>
         </ul>
       </div>
       <form class="form" id="form-presu" novalidate>
         <div class="fila">
-          <label>Producto<select name="producto" id="f-producto"></select></label>
-          <label>Cantidad<input name="cantidad" type="number" min="1" placeholder="Ej. 100" inputmode="numeric"></label>
+          <label data-i18n="form.producto">Producto<select name="producto" id="f-producto"></select></label>
+          <label data-i18n="form.cantidad">Cantidad<input name="cantidad" type="number" min="1" placeholder="Ej. 100" inputmode="numeric" data-i18n-attr="placeholder:form.cantidadPh"></label>
         </div>
         <div class="fila">
-          <label>Colores del logo<select name="tintas"><option>1 tinta</option><option>2 tintas</option><option>Todo color</option><option>No lo sé, aconsejadme</option></select></label>
-          <label>Nombre<input name="nombre" type="text" autocomplete="name" required></label>
+          <label data-i18n="form.tintas">Colores del logo<select name="tintas"><option data-i18n="form.t1">1 tinta</option><option data-i18n="form.t2">2 tintas</option><option data-i18n="form.tc">Todo color</option><option data-i18n="form.tno">No lo sé, aconsejadme</option></select></label>
+          <label data-i18n="form.nombre">Nombre<input name="nombre" type="text" autocomplete="name" required></label>
         </div>
         <div class="fila">
-          <label>Empresa o entidad<input name="empresa" type="text" autocomplete="organization"></label>
-          <label>Teléfono o email<input name="contacto" type="text" autocomplete="tel" required></label>
+          <label data-i18n="form.empresa">Empresa o entidad<input name="empresa" type="text" autocomplete="organization"></label>
+          <label data-i18n="form.contacto">Teléfono o email<input name="contacto" type="text" autocomplete="tel" required></label>
         </div>
-        <label>Detalles<textarea name="mensaje" placeholder="Fecha en la que lo necesitas, colores de la prenda, tallas…"></textarea></label>
-        <label class="archivo" for="f-logo"><input id="f-logo" name="logo" type="file" accept=".pdf,.ai,.svg,.png,.jpg,.jpeg,.eps"><span id="f-logo-txt">Elige tu logo (PDF, AI o PNG)</span></label>
-        <button class="btn btn-p" type="submit">Enviar por WhatsApp</button>
+        <label data-i18n="form.detalles">Detalles<textarea name="mensaje" placeholder="Fecha en la que lo necesitas, colores de la prenda, tallas…" data-i18n-attr="placeholder:form.detallesPh"></textarea></label>
+        <label class="archivo" for="f-logo"><input id="f-logo" name="logo" type="file" accept=".pdf,.ai,.svg,.png,.jpg,.jpeg,.eps"><span id="f-logo-txt" data-i18n="form.eligeLogo">Elige tu logo (PDF, AI o PNG)</span></label>
+        <button class="btn btn-p" type="submit" data-i18n="form.enviar">Enviar por WhatsApp</button>
         <p class="ok" id="form-ok" role="status" hidden></p>
-        <p class="nota">Se abre WhatsApp con el resumen escrito; el logo lo adjuntas allí. Si prefieres correo, escríbenos a info@etazas.com con el logo adjunto. Usamos tus datos solo para responder al presupuesto (<a href="legal.html#privacidad">privacidad</a>).</p>
+        <p class="nota" data-i18n-html="form.nota">Se abre WhatsApp con el resumen escrito; el logo lo adjuntas allí. Si prefieres correo, escríbenos a info@etazas.com con el logo adjunto. Usamos tus datos solo para responder al presupuesto (<a href="legal.html#privacidad">privacidad</a>).</p>
       </form>
     </div>
   </section>
@@ -180,27 +182,30 @@
 
 <footer class="pie">
   <div class="wrap pie-in">
-    <div><a class="logo" href="index.html"><b>eTazas</b></a><p style="margin-top:10px;font-size:.9rem;max-width:30em">Tienda online de MG Merchandising SCP. Estampación textil y merchandising publicitario en Premià de Dalt (Maresme).</p></div>
-    <div><h4>Productos</h4><ul><li><a href="catalogo.html?cat=tazas">Tazas personalizadas</a></li><li><a href="catalogo.html?cat=bolsas">Bolsas de tela</a></li><li><a href="catalogo.html?cat=camisetas">Camisetas</a></li><li><a href="catalogo.html?cat=bidones">Bidones y botellas</a></li><li><a href="catalogo.html?cat=boligrafos">Bolígrafos</a></li><li><a href="catalogo.html">Todo el catálogo</a></li></ul></div>
-    <div><h4>Contacto</h4><ul><li><a href="https://wa.me/34670266434" target="_blank" rel="noopener">WhatsApp 670 266 434</a></li><li><a href="tel:+34611243105">611 24 31 05</a></li><li><a href="mailto:info@etazas.com">info@etazas.com</a></li><li>Carrer Gregal 7, 2ª planta<br>08338 Premià de Dalt, Barcelona</li></ul></div>
-    <div><h4>Síguenos</h4><ul><li><a href="https://www.instagram.com/tazaspersonalizadas.shop/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/estampaciontazas" target="_blank" rel="noopener">Facebook</a></li></ul><h4 style="margin-top:16px">Legal</h4><ul><li><a href="legal.html#aviso">Aviso legal</a></li><li><a href="legal.html#privacidad">Privacidad</a></li><li><a href="legal.html#cookies">Cookies</a></li></ul></div>
+    <div><a class="logo" href="index.html"><b>eTazas</b></a><p style="margin-top:10px;font-size:.9rem;max-width:30em" data-i18n="pie.desc">Tienda online de MG Merchandising SCP. Estampación textil y merchandising publicitario en Premià de Dalt (Maresme).</p></div>
+    <div><h4 data-i18n="pie.productos">Productos</h4><ul><li><a href="catalogo.html?cat=tazas" data-i18n="pie.tazas">Tazas personalizadas</a></li><li><a href="catalogo.html?cat=bolsas" data-i18n="pie.bolsas">Bolsas de tela</a></li><li><a href="catalogo.html?cat=camisetas" data-i18n="pie.camisetas">Camisetas</a></li><li><a href="catalogo.html?cat=bidones" data-i18n="pie.bidones">Bidones y botellas</a></li><li><a href="catalogo.html?cat=boligrafos" data-i18n="pie.bolis">Bolígrafos</a></li><li><a href="catalogo.html" data-i18n="pie.todo">Todo el catálogo</a></li></ul></div>
+    <div><h4 data-i18n="pie.contacto">Contacto</h4><ul><li><a href="https://wa.me/34670266434" target="_blank" rel="noopener">WhatsApp 670 266 434</a></li><li><a href="tel:+34611243105">611 24 31 05</a></li><li><a href="mailto:info@etazas.com">info@etazas.com</a></li><li data-i18n-html="pie.direccion">Carrer Gregal 7, 2ª planta<br>08338 Premià de Dalt, Barcelona</li></ul></div>
+    <div><h4 data-i18n="pie.siguenos">Síguenos</h4><ul><li><a href="https://www.instagram.com/tazaspersonalizadas.shop/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/estampaciontazas" target="_blank" rel="noopener">Facebook</a></li></ul><h4 style="margin-top:16px" data-i18n="pie.legal">Legal</h4><ul><li><a href="legal.html#aviso" data-i18n="pie.aviso">Aviso legal</a></li><li><a href="legal.html#privacidad" data-i18n="pie.privacidad">Privacidad</a></li><li><a href="legal.html#cookies" data-i18n="pie.cookies">Cookies</a></li></ul></div>
   </div>
-  <div class="wrap pie-bajo"><span>© 2026 eTazas · MG Merchandising SCP</span><span>Catálogo sincronizado con Makito y Roly</span></div>
+  <div class="wrap pie-bajo"><span data-i18n="pie.copy">© 2026 eTazas · MG Merchandising SCP</span><span data-i18n="pie.sync">Catálogo sincronizado con Makito y Roly</span></div>
 </footer>
 
 <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="ficha-titulo"><div class="modal-fondo"></div><div class="modal-caja"></div></div>
 <div class="cajon-fondo" id="cajon-fondo"></div>
-<aside class="cajon" id="cajon" aria-hidden="true" aria-label="Mi presupuesto">
-  <div class="cajon-cab"><h2>Mi presupuesto</h2><button class="ficha-cerrar" style="position:static;float:none;margin:0" data-cerrar-cajon aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<aside class="cajon" id="cajon" aria-hidden="true" aria-label="Mi presupuesto" data-i18n-attr="aria-label:cajon.aria">
+  <div class="cajon-cab"><h2 data-i18n="cajon.titulo">Mi presupuesto</h2><button class="ficha-cerrar" style="position:static;float:none;margin:0" data-cerrar-cajon aria-label="Cerrar" data-i18n-attr="aria-label:cajon.cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
   <div class="cajon-lista" id="cajon-lista"></div>
-  <div class="cajon-pie"><div class="sum"><span>Total orientativo, sin IVA</span><b class="num" id="cajon-total">0,00 €</b></div><div class="sum peq"><span>IVA 21 %</span><b class="num" id="cajon-iva">0,00 €</b></div><div class="sum peq"><span>Total con IVA</span><b class="num" id="cajon-con-iva">0,00 €</b></div><a class="btn btn-p" id="cajon-wa" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a><a class="btn btn-s" id="cajon-mail" href="#">Enviar por correo</a></div>
+  <div class="cajon-pie"><div class="sum"><span data-i18n="cajon.total">Total orientativo, sin IVA</span><b class="num" id="cajon-total">0,00 €</b></div><div class="sum peq"><span data-i18n="cajon.iva">IVA 21 %</span><b class="num" id="cajon-iva">0,00 €</b></div><div class="sum peq"><span data-i18n="cajon.conIva">Total con IVA</span><b class="num" id="cajon-con-iva">0,00 €</b></div><a class="btn btn-p" id="cajon-wa" href="#" target="_blank" rel="noopener" data-i18n="cajon.wa">Enviar por WhatsApp</a><a class="btn btn-s" id="cajon-mail" href="#" data-i18n="cajon.mail">Enviar por correo</a></div>
 </aside>
 
+<script>window.I18N && I18N.aplicarDom();</script>
 <script src="data/catalogo.js"></script>
+<script src="data/catalogo-ca.js"></script>
 <script src="data/mockups.js"></script>
 <script src="js/app.js"></script>
 <script src="data/chat-data.js"></script>
+<script src="data/chat-data-ca.js"></script>
 <script src="js/chat.js"></script>
 </body>
 </html>

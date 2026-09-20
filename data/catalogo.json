@@ -10919,7 +10919,7 @@
    "desc": "",
    "material": "",
    "capacidad": "",
-   "medidas": "alto 14 cm, Ø 1,30 cm \",\"minSaleQty\":1},\"sku\":{\"selector\":\"[itemprop=\"sku\"], .product-info-stock-sku .sku .value\",\"value\":\"22238\",\"minSaleQty\":1},\"sku_value\":\"22238",
+   "medidas": "alto 14 cm, Ø 1,30 cm",
    "tecnicas": [
     "Tampografía"
    ],
@@ -12680,7 +12680,7 @@
    "desc": "Libreta de PU reciclado de 21 x 15,5 cm, en un solo color. Se marca en serigrafía.",
    "material": "PU Reciclada",
    "capacidad": "",
-   "medidas": "alto 21 cm, ancho 1,50 cm \",\"minSaleQty\":1},\"sku\":{\"selector\":\"[itemprop=\"sku\"], .product-info-stock-sku .sku .value\",\"value\":\"21903\",\"minSaleQty\":1},\"sku_value\":\"21903, largo 15,50 cm",
+   "medidas": "alto 21 cm, ancho 1,50 cm, largo 15,50 cm",
    "tecnicas": [
     "Serigrafía"
    ],
@@ -13118,7 +13118,7 @@
    "desc": "",
    "material": "Cuero Reciclado",
    "capacidad": "",
-   "medidas": "alto 21 cm, ancho 0,60 cm \",\"minSaleQty\":1},\"sku\":{\"selector\":\"[itemprop=\"sku\"], .product-info-stock-sku .sku .value\",\"value\":\"21655\",\"minSaleQty\":1},\"sku_value\":\"21655, largo 14,10 cm",
+   "medidas": "alto 21 cm, ancho 0,60 cm, largo 14,10 cm",
    "tecnicas": [
     "Serigrafía"
    ],
@@ -13656,7 +13656,7 @@
    "desc": "",
    "material": "Fibra de Té",
    "capacidad": "",
-   "medidas": "alto 1,80 cm, ancho 19,50 cm \",\"minSaleQty\":1},\"sku\":{\"selector\":\"[itemprop=\"sku\"], .product-info-stock-sku .sku .value\",\"value\":\"21926\",\"minSaleQty\":1},\"sku_value\":\"21926, largo 24 cm",
+   "medidas": "alto 1,80 cm, ancho 19,50 cm, largo 24 cm",
    "tecnicas": [
     "Láser",
     "Serigrafía",
@@ -13861,7 +13861,7 @@
    "desc": "",
    "material": "Poliéster 300D RPET/ Metal",
    "capacidad": "",
-   "medidas": "alto 2,50 cm, ancho 22 cm \",\"minSaleQty\":1},\"sku\":{\"selector\":\"[itemprop=\"sku\"], .product-info-stock-sku .sku .value\",\"value\":\"21737\",\"minSaleQty\":1},\"sku_value\":\"21737, largo 22,70 cm",
+   "medidas": "alto 2,50 cm, ancho 22 cm, largo 22,70 cm",
    "tecnicas": [
     "Láser",
     "Serigrafía",
@@ -14114,7 +14114,7 @@
    "desc": "",
    "material": "",
    "capacidad": "500 ml",
-   "medidas": "alto 8 cm, ancho 25 cm \",\"minSaleQty\":1},\"sku\":{\"selector\":\"[itemprop=\"sku\"], .product-info-stock-sku .sku .value\",\"value\":\"21927\",\"minSaleQty\":1},\"sku_value\":\"21927, largo 30,50 cm",
+   "medidas": "alto 8 cm, ancho 25 cm, largo 30,50 cm",
    "tecnicas": [
     "Láser",
     "Serigrafía",
@@ -20570,7 +20570,7 @@
    "desc": "",
    "material": "Acero Inox Reciclado",
    "capacidad": "350 ml",
-   "medidas": "alto 13,50 cm, Ø 8,20 cm \",\"minSaleQty\":1},\"sku\":{\"selector\":\"[itemprop=\"sku\"], .product-info-stock-sku .sku .value\",\"value\":\"22394\",\"minSaleQty\":1},\"sku_value\":\"22394",
+   "medidas": "alto 13,50 cm, Ø 8,20 cm",
    "tecnicas": [
     "Láser",
     "Tampografía"
@@ -20892,7 +20892,7 @@
    "desc": "",
    "material": "Acero Inox Reciclado",
    "capacidad": "700 ml",
-   "medidas": "alto 21,60 cm, Ø 9,20 cm \",\"minSaleQty\":1},\"sku\":{\"selector\":\"[itemprop=\"sku\"], .product-info-stock-sku .sku .value\",\"value\":\"22442\",\"minSaleQty\":1},\"sku_value\":\"22442",
+   "medidas": "alto 21,60 cm, Ø 9,20 cm",
    "tecnicas": [
     "Láser",
     "Tampografía",
@@ -24256,7 +24256,7 @@
    "desc": "",
    "material": "Algodón/ Corcho",
    "capacidad": "",
-   "medidas": "alto 17 cm \",\"minSaleQty\":1},\"sku\":{\"selector\":\"[itemprop=\"sku\"], .product-info-stock-sku .sku .value\",\"value\":\"21692\",\"minSaleQty\":1},\"sku_value\":\"21692, largo 17 cm",
+   "medidas": "alto 17 cm, largo 17 cm",
    "tecnicas": [
     "Láser",
     "Serigrafía",
@@ -25030,7 +25030,7 @@
    "desc": "",
    "material": "Poliéster/ PVC",
    "capacidad": "",
-   "medidas": "alto 105 cm \",\"minSaleQty\":1},\"sku\":{\"selector\":\"[itemprop=\"sku\"], .product-info-stock-sku .sku .value\",\"value\":\"21425\",\"minSaleQty\":1},\"sku_value\":\"21425, largo 70 cm",
+   "medidas": "alto 105 cm, largo 70 cm",
    "tecnicas": [
     "Serigrafía"
    ],
@@ -25108,7 +25108,7 @@
    "desc": "",
    "material": "Algodón Orgánico/ Goma",
    "capacidad": "",
-   "medidas": "alto 28 cm \",\"minSaleQty\":1},\"sku\":{\"selector\":\"[itemprop=\"sku\"], .product-info-stock-sku .sku .value\",\"value\":\"21686\",\"minSaleQty\":1},\"sku_value\":\"21686, largo 17 cm",
+   "medidas": "alto 28 cm, largo 17 cm",
    "tecnicas": [
     "Serigrafía",
     "Transfer"
@@ -26914,7 +26914,7 @@
    "desc": "",
    "material": "Poliéster 600D RPET",
    "capacidad": "",
-   "medidas": "alto 14 cm, ancho 10 cm \",\"minSaleQty\":1},\"sku\":{\"selector\":\"[itemprop=\"sku\"], .product-info-stock-sku .sku .value\",\"value\":\"20535\",\"minSaleQty\":1},\"sku_value\":\"20535, largo 21,50 cm",
+   "medidas": "alto 14 cm, ancho 10 cm, largo 21,50 cm",
    "tecnicas": [],
    "colores": null,
    "coloresNombres": [],
@@ -27390,7 +27390,7 @@
    "desc": "Cinta de poliéster fluorescente de 2 cm de ancho y 50 cm de largo. Se marca en serigrafía o transfer serigráfico y se ve de lejos en eventos y carreras.",
    "material": "Poliéster",
    "capacidad": "",
-   "medidas": "alto 50 cm \",\"minSaleQty\":1},\"sku\":{\"selector\":\"[itemprop=\"sku\"], .product-info-stock-sku .sku .value\",\"value\":\"21941\",\"minSaleQty\":1},\"sku_value\":\"21941, largo 2 cm",
+   "medidas": "alto 50 cm, largo 2 cm",
    "tecnicas": [
     "Serigrafía",
     "Transfer"

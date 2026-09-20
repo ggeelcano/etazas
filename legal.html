@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Información legal · eTazas</title>
+<script src="data/i18n.js"></script>
+<script src="js/i18n.js"></script>
+<title data-i18n="meta.legal.title">Información legal · eTazas</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,37 +15,38 @@
 <style>.legal { max-width: 720px; padding-top: 32px; padding-bottom: 56px; } .legal h1 { margin-bottom: 8px; } .legal h2 { font-size: 1.3rem; margin: 32px 0 10px; } .legal p, .legal li { color: var(--tinta-2); } .legal ul { padding-left: 20px; }</style>
 </head>
 <body data-pagina="legal">
-<a class="skip" href="#main">Ir al contenido</a>
+<a class="skip" href="#main" data-i18n="skip">Ir al contenido</a>
 <header class="cab">
   <div class="wrap cab-in">
-    <a class="logo" href="index.html" aria-label="eTazas, inicio"><img src="img/logo.png" alt="eTazas" width="150" height="34"></a>
+    <a class="logo" href="index.html" aria-label="eTazas, inicio" data-i18n-attr="aria-label:cab.logoAria"><img src="img/logo.png" alt="eTazas" width="150" height="34"></a>
     <span></span>
-    <div class="acciones"><a class="btn btn-s" href="catalogo.html">Ver el catálogo</a></div>
+    <div class="acciones"><a class="btn btn-s" href="catalogo.html" data-i18n="cab.catalogo">Catálogo</a></div>
   </div>
 </header>
 <main id="main" class="wrap legal">
-  <span class="eyebrow">Información legal</span>
-  <h1>Aviso legal, privacidad y cookies</h1>
-  <p>Datos del titular de esta web y de cómo tratamos la información que nos envías al pedir presupuesto.</p>
+  <span class="eyebrow" data-i18n="legal.eyebrow">Información legal</span>
+  <h1 data-i18n="legal.h1">Aviso legal, privacidad y cookies</h1>
+  <p data-i18n="legal.intro">Datos del titular de esta web y de cómo tratamos la información que nos envías al pedir presupuesto.</p>
 
-  <h2 id="aviso">Aviso legal</h2>
+  <h2 id="aviso" data-i18n="legal.aviso">Aviso legal</h2>
   <ul>
-    <li>Titular: MG Merchandising SCP (eTazas).</li>
-    <li>Domicilio: Carrer Gregal 7, 2ª planta, 08338 Premià de Dalt (Barcelona).</li>
-    <li>Contacto: <a href="mailto:info@etazas.com">info@etazas.com</a> · <a href="tel:+34611243105">611 24 31 05</a>.</li>
-    <li>NIF y datos registrales: pendientes de completar por el titular.</li>
+    <li data-i18n="legal.titular">Titular: MG Merchandising SCP (eTazas).</li>
+    <li data-i18n="legal.domicilio">Domicilio: Carrer Gregal 7, 2ª planta, 08338 Premià de Dalt (Barcelona).</li>
+    <li data-i18n-html="legal.contacto">Contacto: <a href="mailto:info@etazas.com">info@etazas.com</a> · <a href="tel:+34611243105">611 24 31 05</a>.</li>
+    <li data-i18n="legal.nif">NIF y datos registrales: pendientes de completar por el titular.</li>
   </ul>
-  <p>Los precios que aparecen en esta web son orientativos, sin IVA (se indica el importe del IVA al 21 % en «Mi presupuesto») y sin gastos de envío. El precio cerrado se confirma en cada presupuesto, una vez recibido el logo y la cantidad definitiva.</p>
+  <p data-i18n="legal.precios">Los precios que aparecen en esta web son orientativos, sin IVA (se indica el importe del IVA al 21 % en «Mi presupuesto») y sin gastos de envío. El precio cerrado se confirma en cada presupuesto, una vez recibido el logo y la cantidad definitiva.</p>
 
-  <h2 id="privacidad">Privacidad</h2>
-  <p>Los datos que nos mandas por el formulario, por WhatsApp o por correo (nombre, empresa, teléfono, correo y el archivo del logo) se usan solo para preparar y responder tu presupuesto y, si lo encargas, para fabricar y entregar el pedido. No se ceden a terceros salvo obligación legal o cuando haga falta para el envío. Puedes pedir acceso, rectificación o supresión escribiendo a <a href="mailto:info@etazas.com">info@etazas.com</a>.</p>
-  <p>El presupuesto que vas montando en la web («Mi presupuesto») se guarda solo en tu navegador y no se envía a ningún servidor hasta que tú lo mandas por WhatsApp o correo.</p>
+  <h2 id="privacidad" data-i18n="legal.privacidad">Privacidad</h2>
+  <p data-i18n-html="legal.priv1">Los datos que nos mandas por el formulario, por WhatsApp o por correo (nombre, empresa, teléfono, correo y el archivo del logo) se usan solo para preparar y responder tu presupuesto y, si lo encargas, para fabricar y entregar el pedido. No se ceden a terceros salvo obligación legal o cuando haga falta para el envío. Puedes pedir acceso, rectificación o supresión escribiendo a <a href="mailto:info@etazas.com">info@etazas.com</a>.</p>
+  <p data-i18n="legal.priv2">El presupuesto que vas montando en la web («Mi presupuesto») se guarda solo en tu navegador y no se envía a ningún servidor hasta que tú lo mandas por WhatsApp o correo.</p>
 
-  <h2 id="cookies">Cookies</h2>
-  <p>Esta web no usa cookies de seguimiento ni de publicidad. Solo guarda en tu navegador la lista de productos de «Mi presupuesto» para que no se pierda al cambiar de página. Las tipografías se cargan desde Google Fonts.</p>
+  <h2 id="cookies" data-i18n="legal.cookies">Cookies</h2>
+  <p data-i18n="legal.cook">Esta web no usa cookies de seguimiento ni de publicidad. Solo guarda en tu navegador la lista de productos de «Mi presupuesto» y el idioma que has elegido, para que no se pierdan al cambiar de página. Las tipografías se cargan desde Google Fonts.</p>
 </main>
 <footer class="pie">
-  <div class="wrap pie-bajo"><span>© 2026 eTazas · MG Merchandising SCP</span><a href="index.html">Volver al inicio</a></div>
+  <div class="wrap pie-bajo"><span data-i18n="pie.copy">© 2026 eTazas · MG Merchandising SCP</span><a href="index.html" data-i18n="pie.inicio">Volver al inicio</a></div>
 </footer>
+<script>window.I18N && I18N.aplicarDom();</script>
 </body>
 </html>

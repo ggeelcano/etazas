@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Catálogo · eTazas</title>
-<meta name="description" content="Catálogo de merchandising personalizable de eTazas: tazas, bolsas, camisetas, bidones, bolis y libretas con tu logo. Precios por cantidad al momento.">
+<script src="data/i18n.js"></script>
+<script src="js/i18n.js"></script>
+<title data-i18n="meta.catalogo.title">Catálogo · eTazas</title>
+<meta name="description" content="Catálogo de merchandising personalizable de eTazas: tazas, bolsas, camisetas, bidones, bolis y libretas con tu logo. Precios por cantidad al momento." data-i18n-attr="content:meta.catalogo.desc">
 <meta property="og:title" content="Catálogo eTazas · merchandising con tu logo">
 <meta property="og:description" content="Tazas, bolsas, camisetas y más con precio por cantidad al momento. Sin cantidad mínima.">
 <meta property="og:image" content="https://ggeelcano.github.io/etazas/img/og.jpg?v=3">
@@ -23,60 +25,63 @@
 <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body data-pagina="catalogo">
-<a class="skip" href="#main">Ir al contenido</a>
+<a class="skip" href="#main" data-i18n="skip">Ir al contenido</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="reg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v22M1 12h22" stroke="currentColor" stroke-width="2"/></symbol></svg>
 
 <header class="cab">
   <div class="wrap cab-in">
-    <a class="logo" href="index.html" aria-label="eTazas, inicio"><img src="img/logo.png" alt="eTazas" width="150" height="34"></a>
-    <form class="busca" id="busca-form" role="search"><label class="visually-hidden" for="q">Buscar producto</label><input id="q" name="q" type="search" placeholder="Busca: taza, bolsa algodón, bidón, sudadera…" autocomplete="off"><button type="submit" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button></form>
+    <a class="logo" href="index.html" aria-label="eTazas, inicio" data-i18n-attr="aria-label:cab.logoAria"><img src="img/logo.png" alt="eTazas" width="150" height="34"></a>
+    <form class="busca" id="busca-form" role="search"><label class="visually-hidden" for="q" data-i18n="busca.label">Buscar producto</label><input id="q" name="q" type="search" placeholder="Busca: taza, bolsa algodón, bidón, sudadera…" autocomplete="off" data-i18n-attr="placeholder:busca.ph"><button type="submit" aria-label="Buscar" data-i18n-attr="aria-label:busca.btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button></form>
     <div class="acciones">
-      <button class="btn btn-s btn-ico menu-btn" id="menu-btn" aria-label="Buscar" aria-expanded="false" aria-controls="busca-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
-      <a class="btn btn-s btn-lista" href="#" data-abrir-cajon><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 3h4v15H4V6h4z"/><path d="M8 11h8M8 15h5"/></svg><span class="visually-hidden">Ver </span><span class="btn-txt">Mi presupuesto</span><span class="cuenta" hidden>0</span></a>
+      <button class="btn btn-s btn-ico menu-btn" id="menu-btn" aria-label="Buscar" aria-expanded="false" aria-controls="busca-form" data-i18n-attr="aria-label:busca.btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+      <a class="btn btn-s btn-lista" href="#" data-abrir-cajon><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 3h4v15H4V6h4z"/><path d="M8 11h8M8 15h5"/></svg><span class="visually-hidden" data-i18n="cab.ver">Ver </span><span class="btn-txt" data-i18n="cab.presu">Mi presupuesto</span><span class="cuenta" hidden>0</span></a>
     </div>
   </div>
-  <nav class="navcat" aria-label="Categorías"><div class="wrap"><ul id="navcat"></ul></div></nav>
+  <nav class="navcat" aria-label="Categorías" data-i18n-attr="aria-label:navcat.aria"><div class="wrap"><ul id="navcat"></ul></div></nav>
 </header>
 
 <main id="main" class="wrap catalogo">
-  <aside class="filtros" id="filtros" aria-label="Filtros"></aside>
+  <aside class="filtros" id="filtros" aria-label="Filtros" data-i18n-attr="aria-label:cat.filtrosAria"></aside>
   <div>
     <div class="cat-cab">
-      <div><h1 id="cat-titulo">Todo el catálogo</h1><span class="n" id="cat-n" role="status"></span></div>
+      <div><h1 id="cat-titulo" data-i18n="cat.h1">Todo el catálogo</h1><span class="n" id="cat-n" role="status"></span></div>
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
-        <button class="btn btn-s filtros-btn" id="filtros-btn" type="button" aria-expanded="false" aria-controls="filtros">Filtros</button>
-        <div class="orden"><label for="orden">Ordenar</label><select id="orden"><option value="rel">Más pedidos</option><option value="asc">Precio: menor a mayor</option><option value="desc">Precio: mayor a menor</option><option value="nom">Nombre</option></select></div>
+        <button class="btn btn-s filtros-btn" id="filtros-btn" type="button" aria-expanded="false" aria-controls="filtros" data-i18n="cat.filtrosBtn">Filtros</button>
+        <div class="orden"><label for="orden" data-i18n="cat.ordenar">Ordenar</label><select id="orden"><option value="rel" data-i18n="cat.ordRel">Más pedidos</option><option value="asc" data-i18n="cat.ordAsc">Precio: menor a mayor</option><option value="desc" data-i18n="cat.ordDesc">Precio: mayor a menor</option><option value="nom" data-i18n="cat.ordNom">Nombre</option></select></div>
       </div>
     </div>
     <div class="chips" id="chips"></div>
     <div class="grid" id="grid"></div>
-    <div class="mas" id="mas" hidden><button class="btn btn-s" type="button">Ver más productos</button></div>
+    <div class="mas" id="mas" hidden><button class="btn btn-s" type="button" data-i18n="cat.masBtn">Ver más productos</button></div>
   </div>
 </main>
 
 <footer class="pie">
   <div class="wrap pie-in">
-    <div><a class="logo" href="index.html"><b>eTazas</b></a><p style="margin-top:10px;font-size:.9rem;max-width:30em">Tienda online de MG Merchandising SCP. Estampación textil y merchandising publicitario en Premià de Dalt (Maresme).</p></div>
-    <div><h4>Contacto</h4><ul><li><a href="https://wa.me/34670266434" target="_blank" rel="noopener">WhatsApp 670 266 434</a></li><li><a href="tel:+34611243105">611 24 31 05</a></li><li><a href="mailto:info@etazas.com">info@etazas.com</a></li><li>Carrer Gregal 7, 2ª planta<br>08338 Premià de Dalt, Barcelona</li></ul></div>
-    <div><h4>Tienda</h4><ul><li><a href="index.html#como">Cómo funciona</a></li><li><a href="index.html#tecnicas">Técnicas de marcaje</a></li><li><a href="index.html#taller">Nuestro taller</a></li><li><a href="index.html#presupuesto">Pedir presupuesto</a></li></ul></div>
-    <div><h4>Legal</h4><ul><li><a href="legal.html#aviso">Aviso legal</a></li><li><a href="legal.html#privacidad">Privacidad</a></li><li><a href="legal.html#cookies">Cookies</a></li></ul></div>
+    <div><a class="logo" href="index.html"><b>eTazas</b></a><p style="margin-top:10px;font-size:.9rem;max-width:30em" data-i18n="pie.desc">Tienda online de MG Merchandising SCP. Estampación textil y merchandising publicitario en Premià de Dalt (Maresme).</p></div>
+    <div><h4 data-i18n="pie.contacto">Contacto</h4><ul><li><a href="https://wa.me/34670266434" target="_blank" rel="noopener">WhatsApp 670 266 434</a></li><li><a href="tel:+34611243105">611 24 31 05</a></li><li><a href="mailto:info@etazas.com">info@etazas.com</a></li><li data-i18n-html="pie.direccion">Carrer Gregal 7, 2ª planta<br>08338 Premià de Dalt, Barcelona</li></ul></div>
+    <div><h4 data-i18n="pie.tienda">Tienda</h4><ul><li><a href="index.html#como" data-i18n="pie.como">Cómo funciona</a></li><li><a href="index.html#tecnicas" data-i18n="pie.tecnicas">Técnicas de marcaje</a></li><li><a href="index.html#taller" data-i18n="pie.taller">Nuestro taller</a></li><li><a href="index.html#presupuesto" data-i18n="pie.presu">Pedir presupuesto</a></li></ul></div>
+    <div><h4 data-i18n="pie.legal">Legal</h4><ul><li><a href="legal.html#aviso" data-i18n="pie.aviso">Aviso legal</a></li><li><a href="legal.html#privacidad" data-i18n="pie.privacidad">Privacidad</a></li><li><a href="legal.html#cookies" data-i18n="pie.cookies">Cookies</a></li></ul></div>
   </div>
-  <div class="wrap pie-bajo"><span>© 2026 eTazas · MG Merchandising SCP</span><span>Catálogo sincronizado con Makito y Roly</span></div>
+  <div class="wrap pie-bajo"><span data-i18n="pie.copy">© 2026 eTazas · MG Merchandising SCP</span><span data-i18n="pie.sync">Catálogo sincronizado con Makito y Roly</span></div>
 </footer>
 
 <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="ficha-titulo"><div class="modal-fondo"></div><div class="modal-caja"></div></div>
 <div class="cajon-fondo" id="cajon-fondo"></div>
-<aside class="cajon" id="cajon" aria-hidden="true" aria-label="Mi presupuesto">
-  <div class="cajon-cab"><h2>Mi presupuesto</h2><button class="ficha-cerrar" style="position:static;float:none;margin:0" data-cerrar-cajon aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<aside class="cajon" id="cajon" aria-hidden="true" aria-label="Mi presupuesto" data-i18n-attr="aria-label:cajon.aria">
+  <div class="cajon-cab"><h2 data-i18n="cajon.titulo">Mi presupuesto</h2><button class="ficha-cerrar" style="position:static;float:none;margin:0" data-cerrar-cajon aria-label="Cerrar" data-i18n-attr="aria-label:cajon.cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
   <div class="cajon-lista" id="cajon-lista"></div>
-  <div class="cajon-pie"><div class="sum"><span>Total orientativo, sin IVA</span><b class="num" id="cajon-total">0,00 €</b></div><div class="sum peq"><span>IVA 21 %</span><b class="num" id="cajon-iva">0,00 €</b></div><div class="sum peq"><span>Total con IVA</span><b class="num" id="cajon-con-iva">0,00 €</b></div><a class="btn btn-p" id="cajon-wa" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a><a class="btn btn-s" id="cajon-mail" href="#">Enviar por correo</a></div>
+  <div class="cajon-pie"><div class="sum"><span data-i18n="cajon.total">Total orientativo, sin IVA</span><b class="num" id="cajon-total">0,00 €</b></div><div class="sum peq"><span data-i18n="cajon.iva">IVA 21 %</span><b class="num" id="cajon-iva">0,00 €</b></div><div class="sum peq"><span data-i18n="cajon.conIva">Total con IVA</span><b class="num" id="cajon-con-iva">0,00 €</b></div><a class="btn btn-p" id="cajon-wa" href="#" target="_blank" rel="noopener" data-i18n="cajon.wa">Enviar por WhatsApp</a><a class="btn btn-s" id="cajon-mail" href="#" data-i18n="cajon.mail">Enviar por correo</a></div>
 </aside>
 
+<script>window.I18N && I18N.aplicarDom();</script>
 <script src="data/catalogo.js"></script>
+<script src="data/catalogo-ca.js"></script>
 <script src="data/mockups.js"></script>
 <script src="js/app.js"></script>
 <script src="data/chat-data.js"></script>
+<script src="data/chat-data-ca.js"></script>
 <script src="js/chat.js"></script>
 </body>
 </html>
