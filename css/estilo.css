@@ -91,6 +91,18 @@ a:hover { color: var(--magenta-2); }
 /* selector de idioma ES | CA: a la derecha de la barra de categorías (o en las acciones de la cabecera si la página no la tiene) */
 .navcat .wrap { display: flex; align-items: center; gap: 8px; }
 .navcat ul { flex: 1; min-width: 0; }
+/* La barra va fuera de la cabecera fija. En ordenador baja a otra línea para que se vean todas las categorías;
+   en móvil se desliza con el dedo y el difuminado de la derecha avisa de que hay más. */
+@media (min-width: 861px) {
+  .navcat ul { flex-wrap: wrap; overflow: visible; }
+  .navcat a { padding: 9px 8px; font-size: .88rem; }
+  .navcat .idioma.idioma-nav { display: none; }
+}
+@media (max-width: 860px) {
+  .cab .acciones .idioma.idioma-cab { display: none; }
+  .navcat ul { -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 36px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 36px), transparent); }
+  .navcat ul::after { content: ""; flex: 0 0 28px; }
+}
 .idioma { display: flex; align-items: center; gap: 2px; flex: none; padding-left: 10px; border-left: 1px solid var(--niebla); font-size: .8rem; font-weight: 700; letter-spacing: .06em; }
 .idioma a { color: var(--gris); text-decoration: none; padding: 8px 6px; border-radius: 6px; line-height: 1; }
 .idioma a:hover { color: var(--ciruela); }

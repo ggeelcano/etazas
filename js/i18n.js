@@ -50,14 +50,16 @@
     }
     selector();
   }
-  // Selector ES | CA: en la barra de categorías (a la derecha) o, si la página no la tiene, en las acciones de la cabecera.
+  // Selector ES | CA. Con barra de categorías va en las dos: en la cabecera (visible en ordenador) y a la derecha de la barra
+  // (visible en móvil); el CSS enseña solo uno. Sin barra, solo en las acciones de la cabecera.
   function urlIdioma(l) { var u = new URL(location.href); u.searchParams.set("lang", l); return u.pathname + u.search + u.hash; }
   function selector() {
     if (document.querySelector(".idioma")) return;
     var enlace = function (l, nombre) { return '<a href="' + urlIdioma(l) + '" lang="' + l + '" hreflang="' + l + '" title="' + nombre + '"' + (l === lang ? ' aria-current="true"' : "") + ">" + l.toUpperCase() + "</a>"; };
-    var html = '<div class="idioma" role="group" aria-label="' + T("idioma.aria") + '">' + enlace("es", T("idioma.es")) + enlace("ca", T("idioma.ca")) + "</div>";
+    var html = function (cls) { return '<div class="idioma' + cls + '" role="group" aria-label="' + T("idioma.aria") + '">' + enlace("es", T("idioma.es")) + enlace("ca", T("idioma.ca")) + "</div>"; };
     var nav = document.querySelector(".navcat .wrap"), acc = document.querySelector(".cab .acciones");
-    if (nav) nav.insertAdjacentHTML("beforeend", html); else if (acc) acc.insertAdjacentHTML("afterbegin", html);
+    if (nav) { nav.insertAdjacentHTML("beforeend", html(" idioma-nav")); if (acc) acc.insertAdjacentHTML("afterbegin", html(" idioma-cab")); }
+    else if (acc) acc.insertAdjacentHTML("afterbegin", html(""));
   }
   // Catálogo en catalán: se aplica sobre los datos en memoria antes de que app.js los lea. Guarda el texto castellano para que el buscador encuentre las dos lenguas.
   function aplicarCatalogo(D, CA) {
