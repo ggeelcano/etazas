@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elegid vuestros productos · eTazas</title>
+<meta name="description" content="Lista de los 658 productos de Makito y Roly que proponemos para la tienda nueva de eTazas. Tachad los que no queráis vender y mandadnos la selección.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Elegid los productos de vuestra tienda">
+<meta property="og:description" content="Vienen marcados los 658 que proponemos. Tachad los que no queráis y nos mandáis la selección por WhatsApp.">
+<meta property="og:image" content="https://ggeelcano.github.io/etazas/img/og.jpg?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://ggeelcano.github.io/etazas/seleccion.html">
+<meta property="og:site_name" content="eTazas">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="css/seleccion.css">
+</head>
+<body data-pagina="seleccion">
+<a class="skip" href="#indice">Ir al índice de categorías</a>
+
+<header class="sel-cab">
+  <div class="wrap">
+    <img class="sel-logo" src="img/logo.png" alt="eTazas" width="150" height="34">
+    <h1>Elegid los productos de vuestra tienda</h1>
+    <p>Os proponemos estos <b id="n-total">658</b> productos de Makito y Roly para la tienda nueva. Vienen todos marcados: tocad la tarjeta de los que no queráis vender y se quedan tachados. Si echáis algo en falta, lo escribís abajo del todo y nos mandáis la selección por WhatsApp o por correo.</p>
+    <p class="sel-nota">Lo que vayáis tachando se guarda en este móvil u ordenador, así que podéis hacerlo en varios ratos.</p>
+    <p class="sel-aviso-enlace" id="aviso-enlace" hidden>Esta es la selección que venía en el enlace.</p>
+  </div>
+</header>
+
+<div class="sel-barra" id="barra">
+  <div class="wrap sel-barra-in">
+    <p class="sel-total" id="total" aria-live="polite">Os quedáis con <b>658</b> de 658</p>
+    <a class="btn btn-s sel-btn-indice" href="#indice">Índice</a>
+    <a class="btn btn-p sel-btn-enviar" href="#enviar">Enviar</a>
+  </div>
+</div>
+
+<main id="main" class="wrap sel-main">
+  <nav class="sel-indice" id="indice" aria-label="Categorías">
+    <h2>Categorías</h2>
+    <ul id="indice-lista"></ul>
+  </nav>
+  <div id="cats"><p class="sel-cargando">Cargando los productos…</p></div>
+
+  <section class="sel-enviar" id="enviar" aria-labelledby="h-enviar">
+    <h2 id="h-enviar">¿Echáis algo en falta?</h2>
+    <label for="falta">Referencias o tipos de producto de Makito o Roly que queráis añadir</label>
+    <textarea id="falta" rows="4" maxlength="5000" placeholder="Por ejemplo: la taza 5290 también en negro, mochilas de cuerdas de algodón, polos de manga larga…"></textarea>
+    <p class="sel-quedan" id="quedan"></p>
+    <div class="sel-resumen" id="resumen" aria-live="polite"></div>
+    <div class="sel-btns">
+      <a class="btn btn-p" id="btn-wa" href="https://wa.me/" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+      <a class="btn btn-s" id="btn-mail" href="mailto:josugarciandia@ggelcano.com">Enviar por correo</a>
+      <button class="btn btn-s" id="btn-copiar" type="button">Copiar enlace</button>
+    </div>
+    <p class="sel-copiado" id="copiado" role="status"></p>
+    <p class="sel-nota">El enlace lleva vuestra selección dentro: quien lo abra ve los mismos productos marcados.</p>
+  </section>
+</main>
+
+<footer class="sel-pie"><div class="wrap">eTazas · MG Merchandising SCP</div></footer>
+
+<script src="data/catalogo.js"></script>
+<script src="data/seleccion-web.js"></script>
+<script src="js/seleccion.js"></script>
+</body>
+</html>
